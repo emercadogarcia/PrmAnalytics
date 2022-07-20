@@ -15,3 +15,12 @@ from crmexpedientes_cab where empresa = '004' AND FECHA_ALTA >TO_DATE('01/01/202
   group by NUMERO_EXPEDIENTE, CODIGO_SECUENCIA
   /***************/
 
+
+Azure DevOps Services: https://azure.microsoft.com
+
+/* MUESTRA TAREAS REPETIDAS ABIERTA*/
+select numero_expediente, CODIGO_SECUENCIA, count(numero_expediente) nro_tareas
+  from crmexpedientes_lin where empresa='004' AND STATUS_TAREA='01'
+  group by numero_expediente, CODIGO_SECUENCIA
+  HAVING count(numero_expediente)>=2
+
