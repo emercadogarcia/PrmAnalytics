@@ -1,5 +1,4 @@
-CREATE OR REPLACE view  BOL_BI_VTAS_PPTO as 
-
+CREATE OR REPLACE force view  BOL_BI_VTAS_PPTO as 
 SELECT
          FACTURAS_VENTAS.fecha_factura
        , facturas_ventas.ejercicio
@@ -275,16 +274,13 @@ GROUP BY
        , articulos.d_codigo_estad4
        , v_facturas_ventas_lin.tipo_pedido
        , DECODE(v_facturas_ventas_lin.tipo_pedido,'10','ENTIDADES','ÉTICO')
-       , DECODE(v_facturas_ventas_lin.tipo_pedido,'10','ENTIDADES','11','ÉTICO','NOTA CREDITO')
+       , DECODE(v_facturas_ventas_lin.tipo_pedido,'10','ENTIDADES','11','ÉTICO','12','ÉTICO','13','ÉTICO','NOTA CREDITO')
 	   , V_FACTURAS_VENTAS_LIN.ALMACEN
        ,'VTAS'
 UNION ALL
-SELECT
-       null FECHA_FACTURA
-     , v_xls_planes_ventas.ejercicio
-     , v_xls_planes_ventas.periodo                                                                                                                                            V_MES
-     , decode(CLIENTES.ZONA,'0410','SCZ','0420','LPZ','0430','CBBA','0440','TJA','0450','ALTO','0451','ALTO','0460','SCR','0461','SCR','0470','BENI','0471','BENI','SIN REG') REG
-     , decode(CLIENTES.ZONA,'0410','SCZ','0420','LPZ','0430','CBBA','0440','TJA','0450','ALTO','0451','ORU','0460','SCR','0461','POT','0470','BENI','0471','PAN','SIN REG')   SUBREG
+SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.periodo V_MES , 
+     decode(CLIENTES.ZONA,'0410','SCZ','0420','LPZ','0430','CBBA','0440','TJA','0450','ALTO','0451','ALTO','0460','SCR','0461','SCR','0470','BENI','0471','BENI','SIN REG') REG
+     , decode(CLIENTES.ZONA,'0410','SCZ','0420','LPZ','0430','CBBA','0440','TJA','0450','ALTO','0451','ORU','0460','SCR','0461','POT','0470','BENI','0471','PAN','SIN REG') SUBREG
      , clientes.canalv
      , clientes.cadena
      , clientes.RPN2
@@ -296,28 +292,19 @@ SELECT
      , v_xls_planes_ventas.cliente CLINETE_ID
      , clientes.razon_social       CLIENTE_NOMBRE
      , clientes.tipo_cliente       CAT_COD
-     , (
-              SELECT
-                     REPLACE(tipos_cliente.descripcion,'CATEGORÍA ','')
-              FROM
-                     TIPOS_CLIENTE
-              WHERE
-                     tipos_cliente.codigo=CLIENTES.TIPO_CLIENTE
-       )
-       CAT
-     , (
-              SELECT
-                     descripcion
-              FROM
-                     familias
-              WHERE
-                     codigo_familia     = articulos.codigo_estad5
-                     AND numero_tabla   = 5
-                     AND ultimo_nivel   = 'S'
-                     AND codigo_empresa = articulos.codigo_empresa
-       )
-                                    UEN
-	 , articulos.codigo_estad5
+     , ( SELECT REPLACE(tipos_cliente.descripcion,'CATEGORÍA ','')
+         FROM TIPOS_CLIENTE
+         WHERE tipos_cliente.codigo=CLIENTES.TIPO_CLIENTE
+       ) CAT, 
+       (
+       SELECT descripcion
+       FROM familias
+       WHERE codigo_familia     = articulos.codigo_estad5
+              AND numero_tabla   = 5
+              AND ultimo_nivel   = 'S'
+              AND codigo_empresa = articulos.codigo_empresa
+       ) UEN, 
+       articulos.codigo_estad5
      , articulos.codigo_estad3      LAB
      , v_xls_planes_ventas.articulo CODIGO_ARTICULO
      , articulos.descrip_comercial  ARTICULO_NOMBRE
@@ -352,7 +339,7 @@ SELECT
               when v_xls_planes_ventas.codigo in ('824'
                                                 ,'864'
                                                 ,'1004'
-                                                ,'1164')
+                                                ,'1164', '1327','1424')
                      then 'ÉTICO'
               when v_xls_planes_ventas.codigo in ('964')
                      then 'ENTIDADES'
@@ -362,7 +349,7 @@ SELECT
               when v_xls_planes_ventas.codigo in ('824'
                                                 ,'864'
                                                 ,'1004'
-                                                ,'1164')
+                                                ,'1164','1327','1424')
                      then 'ÉTICO'
               when v_xls_planes_ventas.codigo in ('964')
                      then 'ENTIDADES'
@@ -480,10 +467,6 @@ WHERE
               and V_XLS_PLANES_VENTAS.EMPRESA =ARTICULOS.CODIGO_EMPRESA
               and V_XLS_PLANES_VENTAS.ARTICULO=ARTICULOS.CODIGO_ARTICULO
        )
-       AND v_xls_planes_ventas.codigo IN ('824'
-                                        ,'864'
-                                        ,'964'
-                                        ,'1004'
-                                        ,'1164'
-										,'1327')
+       AND v_xls_planes_ventas.codigo IN ('824','864', '964','1004','1164',
+        '1327','1424')
        AND v_xls_planes_ventas.empresa LIKE '004'
