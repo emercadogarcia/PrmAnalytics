@@ -18,4 +18,6 @@
 ## 08/03/2023
     1. Reuinion con gerencia para rar informe del recorrido con la persona de comercial
     2. Atencion de BPM.
+## 09/03/2023
+    1. Creación de usuarios en libra
     
