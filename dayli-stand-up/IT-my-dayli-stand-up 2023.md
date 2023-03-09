@@ -26,4 +26,5 @@
     2. Atencion de BPM.
 ## 09/03/2023
     1. Creación de usuarios en libra
+    2. Revision de facturas
     
