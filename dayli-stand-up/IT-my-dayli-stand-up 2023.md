@@ -22,9 +22,12 @@
     1. Recorrido con Daniel Pedraza de comercial
 
 ## 08/03/2023
-    1. Reuinion con gerencia para rar informe del recorrido con la persona de comercial
+    1. Reuinion con gerencia para dar informe del recorrido con la persona de comercial
     2. Atencion de BPM.
 ## 09/03/2023
     1. Creación de usuarios en libra
     2. Revision de facturas
+## 10/03/2023
+    1. Cierre forzoso de BPM.
+    2. Reasignación de usuario a un expediente
     
