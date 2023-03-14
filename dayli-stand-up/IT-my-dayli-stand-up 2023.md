@@ -30,4 +30,6 @@
 ## 10/03/2023
     1. Cierre forzoso de BPM.
     2. Reasignación de usuario a un expediente
-    
+## 13/03/2023
+    1. Cierre de BPM
+    2. Reseteo de cuenta usuario
