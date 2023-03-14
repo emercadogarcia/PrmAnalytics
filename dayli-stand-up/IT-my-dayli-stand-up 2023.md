@@ -9,7 +9,11 @@
     1. revision de errores en alertas.
     2. Se ha realizado la actualizacion del correo de eduardo.gonzalez por jose.huber en las atertas.
     3. Se muestra el paso complementario de la creacion de usuarios.
-
+## 08/03/2023 al 13/03/2023 de Vacacion
+## 14/03/2023
+    1. revision de errores de contabilizacion.
+    2. Caso comppras se ha solucionado el tema de los decimales con la orden de compra para las MM.
+    3. 
 
 
 # Marcelo Osinaga Zabala
