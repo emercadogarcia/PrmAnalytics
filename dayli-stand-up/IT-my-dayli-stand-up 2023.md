@@ -43,4 +43,7 @@
 ## 15/03/2023
     1. Por la mañana salir a solicitar mi ruta para analisis clinicos
     2. Por la tarde participar en la capacitación carga de pedido a personal de suiphar
-    2. Acondicionamiento de cierre de pedidos
+    2. Acondicionamiento de cierre de pedidos.
+## 16/03/2023
+    1. Quitar duplicados de los pedidos
+    2. Monitorear si exixten duplicados. 
