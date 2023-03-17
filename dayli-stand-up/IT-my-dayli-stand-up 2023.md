@@ -13,7 +13,18 @@
 ## 14/03/2023
     1. revision de errores de contabilizacion.
     2. Caso comppras se ha solucionado el tema de los decimales con la orden de compra para las MM.
-    3. 
+    3. Caso de boleta de pago de carlos Emmanuel Orellana resuelto.
+    4. Se revisa codigo de ejecucion automatica el cual no estaba funcionando correctamente.
+    5. Se da capacitacion a equipo de Procaps Fabiana Loma, Giovana y Cassis.
+## 16/03/2023
+    1. Capacitacion Suiphar carga de peddidos.  Carlos Soleto y Gissela Gonzalez.
+    2. Revisando problema de automatismo 04003 tarea 075.
+
+## 17/03/2023
+    1. Se concluye revisando el tema de la ejecucion de tareas automaticas de BPM 04003 donde se tenia problema con la tarea 075
+    2. Se resuelve tema de produccion de nuevo articulo 00039078.
+    3. Alarma contra Incendio tuvo un desperfecto.
+    
 
 
 # Marcelo Osinaga Zabala
