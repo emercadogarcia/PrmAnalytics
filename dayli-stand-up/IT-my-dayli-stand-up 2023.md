@@ -48,3 +48,13 @@
 ## 13/03/2023
     1. Cierre de BPM
     2. Reseteo de cuenta usuario
+## 14/03/2023
+    1. Acondicionamiento de cierre de pedido.
+    2. Baja de un usuario por renuncia Maria mercado procaps
+## 15/03/2023
+    1. Por la mañana salir a solicitar mi ruta para analisis clinicos
+    2. Por la tarde participar en la capacitación carga de pedido a personal de suiphar
+    2. Acondicionamiento de cierre de pedidos.
+## 16/03/2023
+    1. Quitar duplicados de los pedidos
+    2. Monitorear si exixten duplicados. 
