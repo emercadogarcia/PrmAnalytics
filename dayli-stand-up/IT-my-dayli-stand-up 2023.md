@@ -58,3 +58,7 @@
 ## 16/03/2023
     1. Quitar duplicados de los pedidos
     2. Monitorear si exixten duplicados. 
+## 17/03/2023
+    1. Quitar duplicados de solicitud de descuentos.
+    2. Reseteo de cuenta de usuario 
+    2. Capacitación de Cargar PPTO cartera con el ing. Edgar
