@@ -62,3 +62,12 @@
     1. Quitar duplicados de solicitud de descuentos.
     2. Reseteo de cuenta de usuario 
     2. Capacitación de Cargar PPTO cartera con el ing. Edgar
+## 20/03/2023
+    1. Corrección de factura para el enviado al timbrado
+    2. Atencion de un ticket de restablecimiento de contraseña de usuario en libra.
+## 21/03/2023
+    1. Verificación de BPM para revertir de La Paz pero no se realizo el proceso por que se encontraban en estado cerrado.
+    2. Asistencia tecnica en el proceso de pedidos a Julio Muller Saenz
+    3. Acondicionamiento de bpm para el cierre.
+    4. Asignación de un bpm a un usuario
+
