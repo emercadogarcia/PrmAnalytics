@@ -70,4 +70,4 @@
     2. Asistencia tecnica en el proceso de pedidos a Julio Muller Saenz
     3. Acondicionamiento de bpm para el cierre.
     4. Asignación de un bpm a un usuario
-
+    
