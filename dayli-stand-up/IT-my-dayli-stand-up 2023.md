@@ -24,6 +24,8 @@
     1. Se concluye revisando el tema de la ejecucion de tareas automaticas de BPM 04003 donde se tenia problema con la tarea 075
     2. Se resuelve tema de produccion de nuevo articulo 00039078.
     3. Alarma contra Incendio tuvo un desperfecto.
+    4. Se genera un package para promedical para usar en la ejecucion de bpm. El nombre es PK_PROMEDICAL_BOL.
+    
     
 
 
@@ -62,3 +64,4 @@
     1. Quitar duplicados de solicitud de descuentos.
     2. Reseteo de cuenta de usuario 
     2. Capacitación de Cargar PPTO cartera con el ing. Edgar
+    
