@@ -76,5 +76,10 @@
     1. Corrección de factura.
     2. Retroceso de expediente.
     3. Asignación de BPM a usuario.
-    
-
+## 23/03/2023
+    1. Acondicionamiento de cierre de BPM.
+## 24/03/2023
+    1. Creación de usuario
+    2. Acondicionamiento de cierre de BPM
+    3. Verificación de lista de usuarios en libra solicitada por el ing Edgar.
+    4. Corrección de factura.
