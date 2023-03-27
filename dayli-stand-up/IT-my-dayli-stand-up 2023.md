@@ -25,8 +25,11 @@
     2. Se resuelve tema de produccion de nuevo articulo 00039078.
     3. Alarma contra Incendio tuvo un desperfecto.
     4. Se genera un package para promedical para usar en la ejecucion de bpm. El nombre es PK_PROMEDICAL_BOL.
-    
-    
+
+## 27/03/2023
+    1.  
+    2. 
+
 
 
 # Marcelo Osinaga Zabala
