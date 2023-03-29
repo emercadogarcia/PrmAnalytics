@@ -25,8 +25,18 @@
     2. Se resuelve tema de produccion de nuevo articulo 00039078.
     3. Alarma contra Incendio tuvo un desperfecto.
     4. Se genera un package para promedical para usar en la ejecucion de bpm. El nombre es PK_PROMEDICAL_BOL.
-    
-    
+
+## 27/03/2023
+    1.  Se envia correo para el tema de los reportes de libra de cartera.
+    2. Se recibe correo para revisar el tema de calculo de coste.
+    3. Gerencia solicito un reporte automatico para ver el tema de los reportes de backorder.
+
+## 28/03/2023
+    1. Reunion para revisar caso de costos con contabilidad.
+    2. Se ve la propuesta de reporte en el sistema.
+    3. Se programa revision de costos on Ana Maria en horas de la tarde.
+    4. se da capacitacion de induccion a BONAPHARM.
+
 
 
 # Marcelo Osinaga Zabala
