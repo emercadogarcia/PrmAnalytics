@@ -83,3 +83,19 @@
     2. Acondicionamiento de cierre de BPM
     3. Verificación de lista de usuarios en libra solicitada por el ing Edgar.
     4. Corrección de factura.
+## 25/03/2023
+    1. Acondicionamiento de cierre de BPM.
+## 27/03/2023
+    1. Revisión médica.
+    1. Revision de usuarios si existen en la lista de distribución.
+    2. Acondicionamiento de cierre de BPM.
+    3. Rceteo de centa para boletas de pago.
+## 28/03/2023
+    1. Creación de usuario.
+    2. Acondicionamiento de cierre de BPM.
+    3. Receteo de cuenta para acceder a boletas de pago.
+    4. Iniciarl plataforma para comercial
+## 29/03/2023
+    1. Acondicionamiento de cierre de BPM.
+    2. Continuación de plataforma de comercial mejoras en la vista e inicio de sección privada para cargar datos
+
