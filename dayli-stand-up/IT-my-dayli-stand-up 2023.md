@@ -37,8 +37,14 @@
     3. Se programa revision de costos on Ana Maria en horas de la tarde.
     4. se da capacitacion de induccion a BONAPHARM.
 
+## 29/03/2023
+    1. Se realiza analisis y revision de caso costes con Ana Maria y se envia correo indicando los pasos a seguir para corregir.
+    2. Se reponde consulta sobre las NCd de un cliente para aplicar a otro diferente.
+    3. Se envia correo sobre el tema de los pasos de correccion de los costos.
 
-
+## 29/03/2023
+    1. 
+    
 # Marcelo Osinaga Zabala
 
 ## 06/03/2023
