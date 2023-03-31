@@ -108,4 +108,8 @@
 ## 29/03/2023
     1. Acondicionamiento de cierre de BPM.
     2. Continuación de plataforma de comercial mejoras en la vista e inicio de sección privada para cargar datos
-
+## 30/03/2023
+    1. Acondicionamiento de cierre de BPM.
+    2. Receteo de cuenta para acceder a boletas de pago.
+    3. Despliegue de la plaaforma de comercial.
+    4. Reunion con Yanine Taboada y Silvia Taida para validar la información mostrada en la plataforma de comercial.
