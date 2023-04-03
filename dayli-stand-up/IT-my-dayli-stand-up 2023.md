@@ -113,3 +113,7 @@
     2. Receteo de cuenta para acceder a boletas de pago.
     3. Despliegue de la plaaforma de comercial.
     4. Reunion con Yanine Taboada y Silvia Taida para validar la información mostrada en la plataforma de comercial.
+## 31/03/22023
+    1. Creación de usuario en libra nuevo personal.
+    2. Acondicionamiento de cierre de BPM.
+    3. Corrección de factura.
