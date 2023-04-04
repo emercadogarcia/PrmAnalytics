@@ -117,3 +117,13 @@
     1. Creación de usuario en libra nuevo personal.
     2. Acondicionamiento de cierre de BPM.
     3. Corrección de factura.
+## 03/04/2023
+    1. Reunión con los equipos de comercial presentando la plataforma para Backorder.
+    2. Adición de información en la lista de la plataforma solicitado por Yanine y Silvia.
+    3. Acondicionamiento de cierre de BPM.
+    4. Reseteo de cuentas de Usuario accesos a Libra.
+## 04/04/2023
+    1. Creación de usuario en libra nuevo personal.
+    2. Retroceso de expediente.
+    3. Actualización para que usuarios puedan carcar vacaciones verificación en entidades libra.
+    4. Inducción personal nuevo introducció a libra y carga de pedidos. 
