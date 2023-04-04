@@ -127,3 +127,4 @@
     2. Retroceso de expediente.
     3. Actualización para que usuarios puedan carcar vacaciones verificación en entidades libra.
     4. Inducción personal nuevo introducció a libra y carga de pedidos. 
+    5. Actualizacion de la plataforma de comercial, filtro de tareas de cada usuario y actualización de nombres de categoría.
