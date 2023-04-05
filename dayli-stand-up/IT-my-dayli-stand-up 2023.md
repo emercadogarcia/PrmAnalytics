@@ -128,3 +128,8 @@
     3. Actualización para que usuarios puedan carcar vacaciones verificación en entidades libra.
     4. Inducción personal nuevo introducció a libra y carga de pedidos. 
     5. Actualizacion de la plataforma de comercial, filtro de tareas de cada usuario y actualización de nombres de categoría.
+## 05/04/2023
+    1. Creación de usuario en libra nuevo personal.
+    2. Corrección de facturas.
+    3. Reseteo de contraseñas.
+    4. Acondicionamiento de cierre de BPM.
