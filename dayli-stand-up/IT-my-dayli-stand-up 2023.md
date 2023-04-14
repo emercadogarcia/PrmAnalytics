@@ -145,3 +145,13 @@
     2. Correccion de factura.
     3. Cargado de datos de Bacorder y envio por whatsapp a los de comercial.
     4. Presentación de la plataforma de comercial a call center.
+    5. Verificar y quitar duplicados.
+## 13/04/2023
+    1. Reseteo de contraseñas.
+    2. Acondicionamiento de cierre de BPM.
+    3. Correccion de factura.
+    4. Verificar y quitar duplicados.
+## 14/04/2023
+    1. Verificar y quitar duplicados.
+    2. Acondicionamiento de cierre de BPM.
+    3. Carga del PPTO corespondiente a 04/2023.
