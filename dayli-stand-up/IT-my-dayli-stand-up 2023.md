@@ -147,3 +147,26 @@
     2. Corrección de facturas.
     3. Reseteo de contraseñas.
     4. Acondicionamiento de cierre de BPM.
+## 10/04/2023
+    1. Reseteo de contraseñas.
+    2. Capacitacion de ingreso de pedidos a comerciales de Bonapharm.
+## 11/04/2023
+    1. Acondicionamiento de cierre de BPM.
+    2. Resetéo de contraseña Libra.
+    3. Correccion de factura.
+## 12/04/2023
+    1. Acondicionamiento de cierre de BPM.
+    2. Correccion de factura.
+    3. Cargado de datos de Bacorder y envio por whatsapp a los de comercial.
+    4. Presentación de la plataforma de comercial a call center.
+    5. Verificar y quitar duplicados.
+## 13/04/2023
+    1. Reseteo de contraseñas.
+    2. Acondicionamiento de cierre de BPM.
+    3. Correccion de factura.
+    4. Verificar y quitar duplicados.
+## 14/04/2023
+    1. Verificar y quitar duplicados.
+    2. Acondicionamiento de cierre de BPM.
+    3. Carga del PPTO corespondiente a 04/2023.
+    
