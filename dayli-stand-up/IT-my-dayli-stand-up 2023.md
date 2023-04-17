@@ -43,7 +43,15 @@
     3. Se envia correo sobre el tema de los pasos de correccion de los costos.
 
 ## 29/03/2023
-    1. 
+## 04/04/2023 ... 05/04/2023
+    Con baja medica,
+
+## 06/04/2023
+    1. Se resolvio ticket pendientes de contabilidad.
+    2. 
+## 10/04/2023
+
+
     
 # Marcelo Osinaga Zabala
 
@@ -114,4 +122,28 @@
 ## 29/03/2023
     1. Acondicionamiento de cierre de BPM.
     2. Continuación de plataforma de comercial mejoras en la vista e inicio de sección privada para cargar datos
-
+## 30/03/2023
+    1. Acondicionamiento de cierre de BPM.
+    2. Receteo de cuenta para acceder a boletas de pago.
+    3. Despliegue de la plaaforma de comercial.
+    4. Reunion con Yanine Taboada y Silvia Taida para validar la información mostrada en la plataforma de comercial.
+## 31/03/22023
+    1. Creación de usuario en libra nuevo personal.
+    2. Acondicionamiento de cierre de BPM.
+    3. Corrección de factura.
+## 03/04/2023
+    1. Reunión con los equipos de comercial presentando la plataforma para Backorder.
+    2. Adición de información en la lista de la plataforma solicitado por Yanine y Silvia.
+    3. Acondicionamiento de cierre de BPM.
+    4. Reseteo de cuentas de Usuario accesos a Libra.
+## 04/04/2023
+    1. Creación de usuario en libra nuevo personal.
+    2. Retroceso de expediente.
+    3. Actualización para que usuarios puedan carcar vacaciones verificación en entidades libra.
+    4. Inducción personal nuevo introducció a libra y carga de pedidos. 
+    5. Actualizacion de la plataforma de comercial, filtro de tareas de cada usuario y actualización de nombres de categoría.
+## 05/04/2023
+    1. Creación de usuario en libra nuevo personal.
+    2. Corrección de facturas.
+    3. Reseteo de contraseñas.
+    4. Acondicionamiento de cierre de BPM.
