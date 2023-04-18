@@ -49,7 +49,15 @@
 ## 06/04/2023
     1. Se resolvio ticket pendientes de contabilidad.
     2. 
-## 10/04/2023
+## 14/04/2023
+    1.  se revisa ipaquete y se hace modificacion para agregar cierre automatico a los bpm que estan sin peddido asociado, esto a causa de carga de pedidos incompletos.
+    2. 
+
+## 17/04/2023
+    1. Programacion de taareas de la semana, revision de tareas abiertas
+    2. Reunion de status de proeyctos.
+    3. 
+## 18/04/2023
 
 
     
