@@ -155,4 +155,12 @@
     1. Verificar y quitar duplicados.
     2. Acondicionamiento de cierre de BPM.
     3. Carga del PPTO corespondiente a 04/2023.
-    
+## 17/04/2023
+    1. Acondicionamiento de cierre de BPM.
+    2. Correccion de factura.
+    3. Verificación de BPM que tengan tareras habiertas.
+## 18/04/2023
+    1. Acondicionamiento de cierre de BPM.
+    2. Correccion de factura.
+    3. Envío del enlace de backorder a los gestores.
+    4. Creación de usuario.
