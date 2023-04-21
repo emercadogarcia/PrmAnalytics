@@ -58,6 +58,18 @@
     2. Reunion de status de proeyctos.
     3. 
 ## 18/04/2023
+## 19/04/2023
+    1. Se Sostuvo reunion con el equipo de costos de finanazas para validar datos que se obtuvieron al realizar ajustes.
+    2. 
+
+## 20/04/2023
+    1. Se ha concluido con la revision, pruebas y habilitacioin de la mejora a la cartera.
+    2. se ha revisado sostenido reunion con Edisa y finanazas sobre los activos fijos.
+    3. Libra presentaba lentitud que fue subsanada.
+
+## 2104/2023
+    1. Llegue a horas 9:00 debido a reunion de padres en el coegio de mi hijo.
+    2. 
 
 
     
