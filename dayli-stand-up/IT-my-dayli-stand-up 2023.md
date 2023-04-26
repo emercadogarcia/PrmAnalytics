@@ -37,8 +37,42 @@
     3. Se programa revision de costos on Ana Maria en horas de la tarde.
     4. se da capacitacion de induccion a BONAPHARM.
 
+## 29/03/2023
+    1. Se realiza analisis y revision de caso costes con Ana Maria y se envia correo indicando los pasos a seguir para corregir.
+    2. Se reponde consulta sobre las NCd de un cliente para aplicar a otro diferente.
+    3. Se envia correo sobre el tema de los pasos de correccion de los costos.
+
+## 29/03/2023
+## 04/04/2023 ... 05/04/2023
+    Con baja medica,
+
+## 06/04/2023
+    1. Se resolvio ticket pendientes de contabilidad.
+    2. 
+## 14/04/2023
+    1.  se revisa ipaquete y se hace modificacion para agregar cierre automatico a los bpm que estan sin peddido asociado, esto a causa de carga de pedidos incompletos.
+    2. 
+
+## 17/04/2023
+    1. Programacion de taareas de la semana, revision de tareas abiertas
+    2. Reunion de status de proeyctos.
+    3. 
+## 18/04/2023
+## 19/04/2023
+    1. Se Sostuvo reunion con el equipo de costos de finanazas para validar datos que se obtuvieron al realizar ajustes.
+    2. 
+
+## 20/04/2023
+    1. Se ha concluido con la revision, pruebas y habilitacioin de la mejora a la cartera.
+    2. se ha revisado sostenido reunion con Edisa y finanazas sobre los activos fijos.
+    3. Libra presentaba lentitud que fue subsanada.
+
+## 2104/2023
+    1. Llegue a horas 9:00 debido a reunion de padres en el coegio de mi hijo.
+    2. 
 
 
+    
 # Marcelo Osinaga Zabala
 
 ## 06/03/2023
