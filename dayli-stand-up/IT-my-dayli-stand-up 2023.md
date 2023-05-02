@@ -76,6 +76,11 @@
     2. Se cayo LIBRA y se recupero al instante pero saco del sistema a todos.
     3. Se hizo ajuste de personalizacion al programa de oferta cliente articulo para que se pueda agregar la fecha de finalixacion directametne.
     4. sE realiza revision de datos con Maria elena para el tema de presupuestos de Suiphar.
+## 25/04/2023
+    1. Se entrego modelo de reporte del cual salieron varias ideas para aportar.
+    2. 
+## 25/04/2023
+    1. 
     
 # Marcelo Osinaga Zabala
 
