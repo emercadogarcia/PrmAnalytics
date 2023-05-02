@@ -212,3 +212,38 @@
     2. Correccion de factura.
     3. Envío del enlace de backorder a los gestores.
     4. Creación de usuario.
+## 19/04/2023
+    1. Capacitación a personal nuevo aintroducción a libra.
+    2. Quitar duplicado de los expedientes.
+    3. Acondicinamiento de expedientes para su cierre.
+    4. Corrección de factura.
+## 20/04/2023
+    1. Acondicinamiento de expedientes para su cierre.
+    2. Quitar duplicado de los expedientes.
+    3. Reseteo de contraseñas.
+    4. Corrección de factura.
+## 21/04/2023
+    1. Quitar duplicado de los expedientes.
+    2. Dar de baja a personal que renunció.
+    3. Acondicinamiento de expedientes para su cierre.
+    4. Corrección de factura.
+## 22/04/2023
+    1. Acondicinamiento de expedientes para su cierre.
+    2. Corrección de factura.
+## 24/04/2023
+    1. Acondicinamiento de expedientes para su cierre.
+    2. Quitar duplicado de los expedientes.
+    3. Acomodar los link predefinido para el el envio por whatsapp.
+## 25/04/2023
+    1. Acondicinamiento de expedientes para su cierre.
+    2. Quitar duplicado de los expedientes. 
+    3. Envio de la información bakorder al equípo de comercial y usuarios que viene el el reporte.
+    4. Reseteo de contraseñas.
+## 26/04/2023
+    1. Quitar duplicado de los expedientes.
+    2. Creación de usuario.
+    3. Dar de baja a usuario.
+    4. Asignar usuario a expediente.
+    5. Capacitación introducción a libra personal nuevo.
+    6. Acondicinamiento de expedientes para su cierre.
+    
