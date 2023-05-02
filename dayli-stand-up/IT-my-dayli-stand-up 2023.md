@@ -79,8 +79,13 @@
 ## 25/04/2023
     1. Se entrego modelo de reporte del cual salieron varias ideas para aportar.
     2. 
-## 25/04/2023
-    1. 
+
+## 27/04/2023
+    1. SE TRABAJO de forma remota desde casa.
+    2. se revisa tema de precargado de datos.
+## 29/04/2023
+    1. Cierre de mes, atencion y soporte a pedidos.
+    
     
 # Marcelo Osinaga Zabala
 
