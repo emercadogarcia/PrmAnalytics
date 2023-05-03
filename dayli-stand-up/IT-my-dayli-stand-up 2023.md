@@ -67,11 +67,25 @@
     2. se ha revisado sostenido reunion con Edisa y finanazas sobre los activos fijos.
     3. Libra presentaba lentitud que fue subsanada.
 
-## 2104/2023
+## 21/04/2023
     1. Llegue a horas 9:00 debido a reunion de padres en el coegio de mi hijo.
+    2. Se trabaja en el nuevo modelo para generar ppto por gestor.
+
+## 24/04/2023
+    1. Se continua con el tema de la generacion del ppto por gestor
+    2. Se cayo LIBRA y se recupero al instante pero saco del sistema a todos.
+    3. Se hizo ajuste de personalizacion al programa de oferta cliente articulo para que se pueda agregar la fecha de finalixacion directametne.
+    4. sE realiza revision de datos con Maria elena para el tema de presupuestos de Suiphar.
+## 25/04/2023
+    1. Se entrego modelo de reporte del cual salieron varias ideas para aportar.
     2. 
 
-
+## 27/04/2023
+    1. SE TRABAJO de forma remota desde casa.
+    2. se revisa tema de precargado de datos.
+## 29/04/2023
+    1. Cierre de mes, atencion y soporte a pedidos.
+    
     
 # Marcelo Osinaga Zabala
 
