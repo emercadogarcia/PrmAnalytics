@@ -232,4 +232,14 @@
     4. Asignar usuario a expediente.
     5. Capacitación introducción a libra personal nuevo.
     6. Acondicinamiento de expedientes para su cierre.
+## 27/04/2023
+    1. Quitar duplicado de los expedientes.
+    2. Reseteo de contraseñas.
+    3. Corrección de factura.
+    4. Acondicinamiento de expedientes para su cierre.
+    5. Envio de la información bakorder al equípo de comercial y usuarios que viene el el reporte.
+## 28/04/2023
+    1. Acondicinamiento de expedientes para su cierre.
+    2. Corrección de factura.
+## 29/04/2023
     
