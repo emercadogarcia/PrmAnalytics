@@ -256,4 +256,7 @@
     1. Acondicinamiento de expedientes para su cierre.
     2. Corrección de factura.
 ## 29/04/2023
+    1. Cierre de mes.
+    2. Corrección de factura.
+    3. Acondicionamiento de bpm para su cierre.
     
