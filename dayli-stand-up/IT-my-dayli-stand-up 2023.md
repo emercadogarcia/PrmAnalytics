@@ -85,6 +85,12 @@
     2. se revisa tema de precargado de datos.
 ## 29/04/2023
     1. Cierre de mes, atencion y soporte a pedidos.
+
+# Mayo-2023
+## 02/05/2023
+    1. revision de presupuestos con Rodrigo amusquivar, Oswaldo, Ivan y Maria Elenea elc ual se definio que se trabajara para mostrar las ventas por el gestor/visitador que carga las ventas.
+    2. Se hace revisar las alertas que estan dando error para el envio de datos en automatico con Marcelo O.
+    3. 
     
     
 # Marcelo Osinaga Zabala
