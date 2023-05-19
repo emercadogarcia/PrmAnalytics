@@ -29,3 +29,38 @@
     4. Quitar duplicado de los expedientes.
     5. Corrección de factura.
     6. Prueba de pedido circuito completo en libra prueba.
+## 10/05/2023
+    1. Quitar duplicado de los expedientes.
+    2. Retroceso de expediente.
+    3. Reseteo de contraseñas.
+    4. Capacitación introducción a libra y toma de pedidos a personal nuevo.
+## 11/05/2023
+    1. Revisión de factura,
+    2. Acondicinamiento de expedientes para su cierre.
+    3. Corrección de factura.
+## 12/05/2023
+    1. Quitar duplicado de los expedientes.
+    2. Reseteo de contraseñas.
+    3. Acondicinamiento de expedientes para su cierre.
+## 13/05/2023
+    1. Acondicinamiento de expedientes para su cierre.
+## 15/05/2023
+    1. Quitar duplicado de los expedientes.
+    2. Reseteo de contraseñas.
+    3. Creación de usuario Libra.
+    4. Acondicinamiento de expedientes para su cierre.
+## 16/05/2023
+    1. Corrección de factura.
+    2. Reseteo de contraseña.
+    3. Quitar duplicado de los expedientes.
+## 17/05/2023
+    1. Quitar duplicado de los expedientes.
+    2. Reseteo de contraseña.
+    3. Acondicinamiento de expedientes para su cierre.
+## 18/05/2023
+    1. Acondicinamiento de expedientes para su cierre.
+    2. Creación de usuario.
+## 19/05/2023
+    1. Acondicinamiento de expedientes para su cierre.
+    2. Creación de alertas bonapharm.
+    
