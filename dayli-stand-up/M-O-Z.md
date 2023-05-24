@@ -63,4 +63,18 @@
 ## 19/05/2023
     1. Acondicinamiento de expedientes para su cierre.
     2. Creación de alertas bonapharm.
+## 22/05/2023
+    1. Acondicinamiento de expedientes para su cierre.
+    2. Quitar duplicado de los expedientes.
+    3. Reunion con Diego Lopez no se concluyo con la reunion.
+    4. Corrección de factura.
+## 23/05/2023
+    1. Reseteo de contraseña.
+    2. Envio de bakordes a los de comercial.
+    3. Creación de usuarios.
+    4. Acondicinamiento de expedientes para su cierre.
+    5. Quitar duplicado de los expedientes.
+## 24/05/2023
+    1. Asistencia a evento desayuno.
+    2. Adición de columnas a informe de bonapharm.
     
