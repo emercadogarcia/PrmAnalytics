@@ -90,8 +90,27 @@
 ## 02/05/2023
     1. revision de presupuestos con Rodrigo amusquivar, Oswaldo, Ivan y Maria Elenea elc ual se definio que se trabajara para mostrar las ventas por el gestor/visitador que carga las ventas.
     2. Se hace revisar las alertas que estan dando error para el envio de datos en automatico con Marcelo O.
+## 10/05/2023
+## 29/05/2023
+    1. Revisiion de correos pendientes de lectura.
+    2. Revision de avance de tareas de Marcelo Zabala.
+    3. Reunion de TI para tocar temas varios.
+    4. Se corta el internet en horas de la tarde por el lapso de 10 minutos.
+
+## 30/05/2023
+    1. Revision de tareas pendientes.
+    2. Revision de permisos de permisos para importacion de planillas - EMONTOYA.
     3. 
-    
+## 05/06/2023
+    1. Se revisa tareas pendientes de cierre.
+    2. Se envia KPI para Marcelo Osignaga.
+    3.  Se envia kpi valorado de MOZ.
+    4. sE Realiza la evaluacion de desempeño.
+    5. Se reconfigura tabla integracion contable de nomina. Donde se aagrega el codigo B191 y B192.
+
+## 06/06/2023
+    1. Se ha estaado atendiendo solicitudes de modificacion a tabla de integraacion contrable.
+    2. s
     
 # Marcelo Osinaga Zabala
 
