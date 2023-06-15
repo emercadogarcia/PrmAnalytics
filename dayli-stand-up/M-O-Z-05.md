@@ -77,4 +77,29 @@
 ## 24/05/2023
     1. Asistencia a evento desayuno.
     2. Adición de columnas a informe de bonapharm.
-    
+## 25/05/2023
+    1. Acondicinamiento de expedientes para su cierre.
+    2. Corrección del Programa MWL.CRMEXPEDIENTES_CAB
+    3. Corrección del programa MWL.CRM : Bloque->oportunidad : campo->entidad se cambio el metodo
+        de busqueda.
+## 26/05/2023
+    1. En la mañana Cita medica
+    2. Acondicionamiento de expediente para cierre.
+## 27/05/2023
+    1. Cargado el acumulado del bakorder del mes de Mayo y envio a los gestores. 
+## 29/05/2023
+    1. Acondicionamiento para el cierre de expedientes.
+## 30/05/2023
+    1. Acondicionaiento para el cierre de espedientes.
+        573130,572814
+    2. Pasar a real la actualización del BPM 
+## 31/05/2023
+    1. Desplegar laplataforma de comercial a la nueva cuenta del servidor.
+    2. Crear el BPM 03003A
+    3. Acondicionaiento para el cierre de espedientes.
+        573522, 573322, 572892
+        573286, 573654, 573592, 573598	
+        574110
+    4. Se le dio acceso al almacen de SC al usuario RUBEN DARIO LOPEZ ESPINOZA solicitado por Jose Uber Gómez.
+
+        
