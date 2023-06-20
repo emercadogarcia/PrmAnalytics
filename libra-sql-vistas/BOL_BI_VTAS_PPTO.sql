@@ -1,4 +1,5 @@
-CREATE OR REPLACE force view  BOL_BI_VTAS_PPTO as 
+CREATE OR REPLACE FORCE VIEW BOL_BI_VTAS_PPTO(FECHA_FACTURA, EJERCICIO, V_MES, REG, SUBREG, CANALV, CADENA, RPN2, RPN4, CADENA_AUX, AGENTE, COD_RPN, NOMBRE_AGENTE, CLIENTE_ID, CLIENTE_NOMBRE, CAT_COD, CAT, UEN, CODIGO_ESTAD5, LAB, CODIGO_ARTICULO, 
+ARTICULO_NOMBRE, JP_COD, JP_NOMBRE, ST_COD, ST_NOMBRE, TIPO_PEDIDO, USUARIO_PEDIDO, TIPO, TIPO_VTA, FUENTE, CANTIDAD, IMP_NETO, IMP_FACTURADO, PPTO_UND, PPTO_VLR, GESTOR_VTAS, COD_ALMAC) AS
 SELECT
          FACTURAS_VENTAS.fecha_factura
        , facturas_ventas.ejercicio
@@ -17,14 +18,11 @@ SELECT
        , facturas_ventas.d_cliente     CLIENTE_NOMBRE
        , clientes.tipo_cliente         CAT_COD
        , (
-                SELECT
-                       REPLACE(tipos_cliente.descripcion,'CATEGORÍA ','')
-                FROM
-                       TIPOS_CLIENTE
-                WHERE
-                       tipos_cliente.codigo=CLIENTES.TIPO_CLIENTE
-         )
-                                   CAT
+          SELECT
+           REPLACE(tipos_cliente.descripcion,'CATEGORÍA ','')
+          FROM TIPOS_CLIENTE
+          WHERE tipos_cliente.codigo=CLIENTES.TIPO_CLIENTE
+         ) CAT
        , articulos.d_codigo_estad5 UEN
 	   , articulos.codigo_estad5
        , articulos.codigo_estad3   LAB
@@ -35,9 +33,10 @@ SELECT
        , articulos.codigo_estad4     ST_COD
        , articulos.d_codigo_estad4   ST_NOMBRE
        , v_facturas_ventas_lin.tipo_pedido
-       , DECODE(v_facturas_ventas_lin.tipo_pedido,'10','ENTIDADES','ÉTICO')                                                          TIPO
+       , NVL(v_facturas_ventas_lin.usuario_pedido, FACTURAS_VENTAS.USUARIO) usuario_pedido /*nuevo campo agregado*/
+       , DECODE(v_facturas_ventas_lin.tipo_pedido,'10','ENTIDADES','ÉTICO') TIPO
        , DECODE(v_facturas_ventas_lin.tipo_pedido,'10','ENTIDADES','11','ÉTICO','12','ÉTICO','13','ÉTICO','NOTA CREDITO')            TIPO_VTA
-       ,'VTAS'                                                                                                                       FUENTE
+       ,'VTAS'  FUENTE
        , SUM(V_FACTURAS_VENTAS_LIN.UNIDADES_SERVIDAS)                                                                                CANTIDAD
        , sum((V_FACTURAS_VENTAS_LIN.IMPORTE_NETO_LIN-(V_FACTURAS_VENTAS_LIN.IMPORTE_NETO_LIN*FACTURAS_VENTAS.DTOS_GLOBAL)/100)*0.87) IMP_NETO
        , sum(V_FACTURAS_VENTAS_LIN.IMPORTE_NETO_LIN-(V_FACTURAS_VENTAS_LIN.IMPORTE_NETO_LIN*FACTURAS_VENTAS.DTOS_GLOBAL)/100)        IMP_FACTURADO
@@ -248,7 +247,7 @@ GROUP BY
        , facturas_ventas.ejercicio
        , facturas_ventas.v_mes
 	   , FACTURAS_VENTAS.NUMERO_SERIE
-	   , FACTURAS_VENTAS.NUMERO_FACTURA 
+	   , FACTURAS_VENTAS.NUMERO_FACTURA
 	   , facturas_ventas.empresa
        , decode(DOMICILIOS_ENVIO.ZONA,'0410','SCZ','0420','LPZ','0430','CBBA','0440','TJA','0450','ALTO','0451','ALTO','0460','SCR','0461','SCR','0470','BENI','0471','BENI','SIN REG')
        , decode(DOMICILIOS_ENVIO.ZONA,'0410','SCZ','0420','LPZ','0430','CBBA','0440','TJA','0450','ALTO','0451','ORU','0460','SCR','0461','POT','0470','BENI','0471','PAN','SIN REG')
@@ -273,12 +272,13 @@ GROUP BY
        , articulos.codigo_estad4
        , articulos.d_codigo_estad4
        , v_facturas_ventas_lin.tipo_pedido
+       , NVL(v_facturas_ventas_lin.usuario_pedido, FACTURAS_VENTAS.USUARIO) /*nuevo campo agregado*/
        , DECODE(v_facturas_ventas_lin.tipo_pedido,'10','ENTIDADES','ÉTICO')
        , DECODE(v_facturas_ventas_lin.tipo_pedido,'10','ENTIDADES','11','ÉTICO','12','ÉTICO','13','ÉTICO','NOTA CREDITO')
 	   , V_FACTURAS_VENTAS_LIN.ALMACEN
        ,'VTAS'
 UNION ALL
-SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.periodo V_MES , 
+SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.periodo V_MES ,
      decode(CLIENTES.ZONA,'0410','SCZ','0420','LPZ','0430','CBBA','0440','TJA','0450','ALTO','0451','ALTO','0460','SCR','0461','SCR','0470','BENI','0471','BENI','SIN REG') REG
      , decode(CLIENTES.ZONA,'0410','SCZ','0420','LPZ','0430','CBBA','0440','TJA','0450','ALTO','0451','ORU','0460','SCR','0461','POT','0470','BENI','0471','PAN','SIN REG') SUBREG
      , clientes.canalv
@@ -295,7 +295,7 @@ SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.pe
      , ( SELECT REPLACE(tipos_cliente.descripcion,'CATEGORÍA ','')
          FROM TIPOS_CLIENTE
          WHERE tipos_cliente.codigo=CLIENTES.TIPO_CLIENTE
-       ) CAT, 
+       ) CAT,
        (
        SELECT descripcion
        FROM familias
@@ -303,7 +303,7 @@ SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.pe
               AND numero_tabla   = 5
               AND ultimo_nivel   = 'S'
               AND codigo_empresa = articulos.codigo_empresa
-       ) UEN, 
+       ) UEN,
        articulos.codigo_estad5
      , articulos.codigo_estad3      LAB
      , v_xls_planes_ventas.articulo CODIGO_ARTICULO
@@ -335,6 +335,7 @@ SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.pe
        )
            ST_NOMBRE
      ,'11' tipo_pedido
+     , agentes.usuario usuario_pedido
      , case
               when v_xls_planes_ventas.codigo in ('824'
                                                 ,'864'
@@ -469,4 +470,4 @@ WHERE
        )
        AND v_xls_planes_ventas.codigo IN ('824','864', '964','1004','1164',
         '1327','1424')
-       AND v_xls_planes_ventas.empresa LIKE '004'
+       AND v_xls_planes_ventas.empresa LIKE '004';

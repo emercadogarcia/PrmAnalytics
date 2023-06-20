@@ -90,8 +90,49 @@
 ## 02/05/2023
     1. revision de presupuestos con Rodrigo amusquivar, Oswaldo, Ivan y Maria Elenea elc ual se definio que se trabajara para mostrar las ventas por el gestor/visitador que carga las ventas.
     2. Se hace revisar las alertas que estan dando error para el envio de datos en automatico con Marcelo O.
+## 10/05/2023
+## 29/05/2023
+    1. Revisiion de correos pendientes de lectura.
+    2. Revision de avance de tareas de Marcelo Zabala.
+    3. Reunion de TI para tocar temas varios.
+    4. Se corta el internet en horas de la tarde por el lapso de 10 minutos.
+
+## 30/05/2023
+    1. Revision de tareas pendientes.
+    2. Revision de permisos de permisos para importacion de planillas - EMONTOYA.
     3. 
+# junio - 2023
+## 05/06/2023
+    1. Se revisa tareas pendientes de cierre.
+    2. Se envia KPI para Marcelo Osignaga.
+    3.  Se envia kpi valorado de MOZ.
+    4. sE Realiza la evaluacion de desempeño.
+    5. Se reconfigura tabla integracion contable de nomina. Donde se aagrega el codigo B191 y B192.
+
+## 06/06/2023
+    1. Se ha estaado atendiendo solicitudes de modificacion a tabla de integraacion contrable.
+    2. Inconveniente con temaa presupuesto, se debe deinfinir quien lo va a realizar la generacion del ppto.
+    3. Se modifica BI PROCAPS, modificacion hoja productos x ST para mostrar ventas por solucion terapeutica.
+
+## 07/06/2023 
+    1. Se agrega nuevo articulo de VISICON CARE.
+    2. Se modifica BI PROCAPS x ST de acuerdo a los solicitado por la señora Maria Elena.
+    3.  Se realizar laas ultimas modificaciones al tema contabilizacion de nomina incluido los reintegros.
+    rh_parammex   RH_PARAMEX.
+    4. Se soluciona prblemas con la creacion de ST en el sistema.
+## 09/06/2023
+    1. Se genera tareaas del dia.
+    2. visitaa medica programadaa a horaas 10:30.
+    3. Se envia consulta sobre la contabilizacion de nomina - FINIQUITO para que puedan dar inicio o definan cuando se iniciaraa los pasos.
     
+## 14/06/2023
+    1. Se reliza capacitacion sobre la nueva version de libra.
+    2. Generacion de sopartes para libra.
+    
+
+## 16/05/2023
+    1. Se revisa y habilita el reporte de LANZAR INFORME de cuadro de mando Financiero [CMF]
+    2. Se 
     
 # Marcelo Osinaga Zabala
 
