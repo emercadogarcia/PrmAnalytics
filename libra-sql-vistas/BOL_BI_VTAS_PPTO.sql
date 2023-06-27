@@ -1,6 +1,6 @@
-CREATE OR REPLACE FORCE VIEW BOL_BI_VTAS_PPTO(FECHA_FACTURA, EJERCICIO, V_MES, REG, SUBREG, CANALV, CADENA, RPN2, RPN4, CADENA_AUX, AGENTE, COD_RPN, NOMBRE_AGENTE, CLIENTE_ID, CLIENTE_NOMBRE, CAT_COD, CAT, UEN, CODIGO_ESTAD5, LAB, CODIGO_ARTICULO, 
+CREATE OR REPLACE FORCE VIEW BOL_BI_VTAS_PPTO(FECHA_FACTURA, EJERCICIO, V_MES, REG, SUBREG, CANALV, CADENA, RPN2, RPN3, RPN4, CADENA_AUX, AGENTE, COD_RPN, NOMBRE_AGENTE, CLIENTE_ID, CLIENTE_NOMBRE, CAT_COD, CAT, UEN, CODIGO_ESTAD5, LAB, CODIGO_ARTICULO, 
 ARTICULO_NOMBRE, JP_COD, JP_NOMBRE, ST_COD, ST_NOMBRE, TIPO_PEDIDO, USUARIO_PEDIDO, TIPO, TIPO_VTA, FUENTE, CANTIDAD, IMP_NETO, IMP_FACTURADO, PPTO_UND, PPTO_VLR, GESTOR_VTAS, COD_ALMAC) AS
-SELECT
+SELECT /*BOL_BI_VTAS_PPTO by Edgar Mercado*/
          FACTURAS_VENTAS.fecha_factura
        , facturas_ventas.ejercicio
        , facturas_ventas.v_mes
@@ -9,6 +9,7 @@ SELECT
        , facturas_ventas.canalv
        , facturas_ventas.cadena
        , facturas_ventas.RPN2
+       , facturas_ventas.RPN3
        , facturas_ventas.RPN4
        , DECODE(facturas_ventas.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES','ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE',FACTURAS_VENTAS.CADENA) CADENA_AUX
        , agentes_clientes.agente
@@ -43,10 +44,14 @@ SELECT
        , 0                                                                                                                           PPTO_UND
        , 0                                                                                                                           PPTO_VLR
        , CASE
-                  when articulos.codigo_estad3 in ('HERSIL')
-                           THEN trim(subStr(facturas_ventas.RPN4,0,3))
-                           else agentes.nif
-         end GESTOR_VTAS
+             when articulos.codigo_estad3 in ('HERSIL')
+             THEN trim(subStr(facturas_ventas.RPN4,0,3))
+             when articulos.codigo_estad3 in ('BIODUE','BONAPHARM')
+             THEN trim(subStr(facturas_ventas.RPN2,0,3))
+             when articulos.codigo_estad3 in ('LAFAGE')
+             THEN trim(subStr(facturas_ventas.RPN3,0,3))
+             else agentes.nif
+          end GESTOR_VTAS
 		 , V_FACTURAS_VENTAS_LIN.ALMACEN COD_ALMAC
 FROM
          (
@@ -113,6 +118,17 @@ FROM
                                      )
                        )
                        RPN2
+                     , (
+                            SELECT NOMBRE
+                              FROM VALORES_CLAVES V
+                              WHERE V.CLAVE='RPN3' AND V.VALOR_CLAVE= (
+                                   SELECT VALOR_CLAVE
+                                     FROM CLIENTES_CLAVES_ESTADISTICAS c
+                                     WHERE c.CLAVE ='RPN3'  AND c.CODIGO_CLIENTE=FACTURAS_VENTAS.CLIENTE
+                                      AND c.CODIGO_EMPRESA=facturas_ventas.empresa
+                                     )
+                       )
+                       RPN3
                      , (
                               SELECT
                                      NOMBRE
@@ -254,6 +270,7 @@ GROUP BY
        , facturas_ventas.canalv
        , facturas_ventas.cadena
        , facturas_ventas.RPN2
+       , facturas_ventas.RPN3
        , facturas_ventas.RPN4
        , DECODE(facturas_ventas.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES','ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE',FACTURAS_VENTAS.CADENA)
        , agentes_clientes.agente
@@ -272,7 +289,7 @@ GROUP BY
        , articulos.codigo_estad4
        , articulos.d_codigo_estad4
        , v_facturas_ventas_lin.tipo_pedido
-       , NVL(v_facturas_ventas_lin.usuario_pedido, FACTURAS_VENTAS.USUARIO) /*nuevo campo agregado*/
+       , NVL(v_facturas_ventas_lin.usuario_pedido, FACTURAS_VENTAS.USUARIO)  /*nuevo campo agregado*/
        , DECODE(v_facturas_ventas_lin.tipo_pedido,'10','ENTIDADES','ÉTICO')
        , DECODE(v_facturas_ventas_lin.tipo_pedido,'10','ENTIDADES','11','ÉTICO','12','ÉTICO','13','ÉTICO','NOTA CREDITO')
 	   , V_FACTURAS_VENTAS_LIN.ALMACEN
@@ -284,6 +301,7 @@ SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.pe
      , clientes.canalv
      , clientes.cadena
      , clientes.RPN2
+     , clientes.RPN3 /*nuevo campo adicionado*/
      , clientes.RPN4
      , DECODE(CLIENTES.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES','ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE',CLIENTES.CADENA) CADENA_AUX
      , agentes_clientes.agente
@@ -361,9 +379,13 @@ SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.pe
      , v_xls_planes_ventas.importe  PPTO_VLR
      , CASE
               when articulos.codigo_estad3 in ('HERSIL')
-                     THEN trim(subStr(clientes.RPN4,0,3))
-                     else agentes.nif
-       end GESTOR_VTAS
+                THEN trim(subStr(clientes.RPN4,0,3))
+              when articulos.codigo_estad3 in ('BIODUE','BONAPHARM')
+                THEN trim(subStr(clientes.RPN2,0,3))
+              when articulos.codigo_estad3 in ('LAFAGE')
+                THEN trim(subStr(clientes.RPN3,0,3))
+                else agentes.nif
+         end GESTOR_VTAS
 	   , V_XLS_PLANES_VENTAS.ALMACEN COD_ALMAC
 FROM
        V_XLS_PLANES_VENTAS
@@ -430,6 +452,17 @@ FROM
                                    )
                      )
                      RPN2
+                   , ( SELECT NOMBRE
+                       FROM VALORES_CLAVES V
+                       WHERE V.CLAVE ='RPN3' AND V.VALOR_CLAVE=
+                            ( SELECT VALOR_CLAVE
+                               FROM CLIENTES_CLAVES_ESTADISTICAS c
+                               WHERE c.CLAVE ='RPN3'
+                                  AND c.CODIGO_CLIENTE=clientes.codigo_rapido
+                                  AND c.CODIGO_EMPRESA=clientes.codigo_empresa
+                            )
+                     )
+                     RPN3 /*nuevo campo*/
                    , (
                             SELECT
                                    NOMBRE
