@@ -128,12 +128,18 @@
 ## 14/06/2023
     1. Se reliza capacitacion sobre la nueva version de libra.
     2. Generacion de sopartes para libra.
+    3. Se habilita tiempo de INACTIVIDAD en LIBRA confgirado a 30 minutos y aviso a 90 segundos antes de finalizar.
     
 
 ## 16/05/2023
     1. Se revisa y habilita el reporte de LANZAR INFORME de cuadro de mando Financiero [CMF]
-    2. Se 
-    
+    2. Se presento probelema con LOTE ORIGINAL que no se mostraba en la factura, la cual fue causada por un NO REGISTRO de los datos del LOTE ORIGINAL  y datos complementarios como ser fabricante.
+    3. Se envia un listado de lotes de articulos sin lote.
+## 19/06/2023
+    1. Revision de KPI de Marcelo.
+    2. Se recibe ticket de TH sobre evaluacion desempeño que muestra solo 2022 el cual se debe a que no esta cerrado 2022 para poder ver el 2023.
+    2. 
+
 # Marcelo Osinaga Zabala
 
 ## 06/03/2023
