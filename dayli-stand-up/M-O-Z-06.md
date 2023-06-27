@@ -75,4 +75,20 @@
     2. Acondicionamiento para el cierre de pedidos.
     -> 577941, 577659, 577481, 577572, 577216, 576657
     -> 577080
-    
+## 19/06/2023
+    1. Acondicionamiento para el cierre de pedidos.
+    -> 577679, 577366
+    -> 576282, 576447, 576489, 576562, 576610, 576611, 576612, 576635,
+       576637, 576759, 576760, 576761, 576762, 576780, 576849, 577750, 
+       577951, 578474, 578526 
+    2. Receteo de contraseña
+        - Carla solange
+        - Daniel erik Herrera
+        - Jocelin Bellot
+
+## 20/06/2023
+    1. Permiso por la mañana hasta las 12 por motivo de examen
+        de licencia de conducir.
+    2. Envio de link de reporte Backorder a los gestores de la semana 2 de junio.
+    3. Acondicionamiento para el cierre de pedidos.
+       -> 578692
