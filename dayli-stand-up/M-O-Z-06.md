@@ -92,3 +92,40 @@
     2. Envio de link de reporte Backorder a los gestores de la semana 2 de junio.
     3. Acondicionamiento para el cierre de pedidos.
        -> 578692
+## 22/06/2023
+    1. Acondicionamiento para el cierre de pedidos.
+    -> 576537
+    -> 579256
+    -> 579178
+    2. Restablecer contraseña en libra
+    -> jocelyn.bellot@promedical.com.bo
+## 23/06/2023
+    1. Quitar duplicados de expedientes.
+    2. Receteo de contraseña.
+        -> madelcarpio.hersil@gmail.com
+    3. Acondicionamiento para el cierre de expedientes.
+        -> coloco el numero del tiket por que son muchos bpm #8388
+        -> 545791, 560310, 564476, 566157, 566158, 566160, 566598
+        -> 578454, 579472, 579537, 579540
+        -> 579510, 579096, 578967, 579269, 578832, 578643, 578644, 578639, 578453
+        -> 578677, 578452, 578092, 578245, 579131, 579132, 579291
+## 26/06/2023
+    1. Reseteo de contraseña en LIBRA.
+    -> gvelarde@procaps.com.bo
+    2. Acondicionamiento para el cierre de expedientes.
+    -> 579791, 580033, 579921, 579275, 579793, 579791, 579785, 579783, 578149, 577804  
+## 27/06/2023
+    1. Acondicionamiento de expediente para el cierre.
+    -> 579271, 579691, 580058, 580207
+    -> 580028 , 580084 
+    -> 578421 ,580119 , 580117 ,580115 ,580067 ,580064 
+    -> 577734, 580286, 580288, 580287, 580324, 580326, 580327, 580339, 580443, 580359, 580360, 
+        580365, 580367, 580376, 580377, 580370, 580448,
+    -> 577976, 579377, 579419, 579866
+    -> 580381, 580386
+    2. Asignación de trareas.
+    -> 579471
+    3.  Quitar duplicado de expedientes. 
+    4. Reseteo de accesos a LIBRA.
+    -> rloria.hersil@gmail.com
+    5. Envío del link de reporte backorder a los de comercial. 
