@@ -139,6 +139,22 @@
     1. Revision de KPI de Marcelo.
     2. Se recibe ticket de TH sobre evaluacion desempeño que muestra solo 2022 el cual se debe a que no esta cerrado 2022 para poder ver el 2023.
     2. 
+## 26/06/2023
+    1. Reunion de status de KPI.
+    2. Definimos avances de los kpi de Marcelo.
+
+## 27/06/2023
+    1. Se agrega nueva vista de ventas por RPN.
+    2. 
+## 28/06/2023
+    1. planificar tareas de fin de mes y kpi.
+    2. 
+
+# JULIO 2026
+## 03/07/2023
+    1. Revision y configuraicon de TABLA INTEGRACION CONTABLE sin prima y sin segundo aguinaldo.
+    2. Se corrige problema de envio de boletas al gestor documental, el cual se debia a que no se contaba con una vista en ambiente REAL.
+    
 
 # Marcelo Osinaga Zabala
 
