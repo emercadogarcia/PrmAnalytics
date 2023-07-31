@@ -1,6 +1,6 @@
 # IT --- Tareas diarias
 # Marcelo Osinaga Zabala
-## 02/05/2023
+## 02/06/2023
     1. Acondicionamiento para el cierre de expedientes.
         572561, 573454, 573496, 573642, 573876, 573883, 573894
         573896, 574007, 574054, 574048, 574050, 572179, 572183
@@ -129,3 +129,15 @@
     4. Reseteo de accesos a LIBRA.
     -> rloria.hersil@gmail.com
     5. Envío del link de reporte backorder a los de comercial. 
+## 28/06/2023
+    1. Acondicionamiento de expediente para el cierre.
+    -> 579992, 580293, 578120
+## 29/06/2023
+    1. Acondicionamiento de expediente para el cierre.
+    -> 580845, 580976, 580628, 580401, 580504, 580395, 580121
+    2. Receteo de contraseña
+    -> henry.acebey@promedical.com.bo
+    -> maria.julian@promedical.com.bo
+## 30/06/2023
+    1. Acondicionamiento de expediente para el cierre.
+
