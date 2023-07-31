@@ -154,7 +154,18 @@
 ## 03/07/2023
     1. Revision y configuraicon de TABLA INTEGRACION CONTABLE sin prima y sin segundo aguinaldo.
     2. Se corrige problema de envio de boletas al gestor documental, el cual se debia a que no se contaba con una vista en ambiente REAL.
+ ## 04/07/2023   
+    1. Se generar KPI de julio para MOZ y EMG y se comparte.
+    2. Se corrige y crea una nueva tabla de integracion contable para nominas sin la prima y 2do aguinaldo.
+    3. 
+ ## 05/07/2023
+    1. Se ha agregado datos de prueba al modulo de compras donde se tienen las parametrizaciones de barcos y buques lo cual se dejan datos de prueba.
+    3. e sostuvo una reunion con Marcelo para el tema de COMPRAS.
     
+
+## 06/07/2023
+    1. Se envia correo sobre el manual de reseteo de contraseña de libra para autogestionar  el cambio.
+    2. 
 
 # Marcelo Osinaga Zabala
 
