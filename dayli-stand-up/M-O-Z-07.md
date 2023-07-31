@@ -77,4 +77,39 @@
     -> 584435, 584781, 585144, 585156, 585321
     2. Receteo de contraseña e libra
     -> rcaballero@procaps.com.bo
-    
+## 18/07/2023
+    1. Acondicionamiento para el cierre de expedientes.
+    ->  585358, 585312, 586137
+    2. Retroceso de tarea en expediente.
+    -> 580661
+    3. Receteo de contraseña en libra.
+    -> KRRODRIGUE
+## 19/07/2023
+    1. Acondicionamiento para el cierre de expedientes.
+    2. Reseteo de contraseña.
+## 20/07/2023
+    1. Acondicionamiento para el cierre de expedientes.
+## 21/07/2023
+    1. Acondicionamiento para el cierre de expedientes.
+    2. Reseteo de contraseña.
+## 24/07/2023
+    1. Acondicionamiento para el cierre de expedientes.
+    -> 587178
+## 25/07/2023
+    1. Envio de reporte backorder a las personas de comercial.
+    2. Acondicionamiento para el cierre de expedientes.
+## 26/07/2023
+    1. Acondicionamiento para el cierre de expedientes.
+    2. Reseteo de contraseña
+## 27/07/2023
+    1. Acondicionamiento para el cierre de expedientes.
+    2. Reseteo de contraseña
+## 28/07/2023
+    1. Envio de reporte backorder a las personas de comercial.
+    2. Acondicionamiento para el cierre de expedientes.
+    3. Reseteo de contraseña
+## 29/07/2023
+    1. Acondicionamiento para el cierre de expedientes.
+## 31/07/2023
+    1. Acondicionamiento para el cierre de expedientes
+    2. Creación de usuarios en libra.

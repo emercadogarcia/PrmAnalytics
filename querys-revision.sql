@@ -39,3 +39,6 @@ SELECT CODIGO_SECUENCIA, EQUIPO_A_REALIZARLO, usuario_a_realizarlo, COUNT(NUMERO
 WHERE EMPRESA='004' AND STATUS_TAREA='01' and codigo_secuencia in ('030','031','040','050','060','070','075') and numero_expediente in (Select numero_expediente from crmexpedientes_cab 	where FECHA_INICIO >=trunc(current_date,'MONTH') and empresa='004' and tipo_expediente='04003' and status_expediente='01') GROUP BY  CODIGO_SECUENCIA,EQUIPO_A_REALIZARLO, usuario_a_realizarlo
 
 /**** *****/
+
+SELECT CODIGO_SECUENCIA,NUMERO_EXPEDIENTE, EQUIPO_A_REALIZARLO, usuario_a_realizarlo, COUNT(NUMERO_EXPEDIENTE) TTL FROM crmexpedientes_lin
+WHERE EMPRESA='004' AND STATUS_TAREA='01' and codigo_secuencia in ('065') and numero_expediente in (Select numero_expediente from crmexpedientes_cab 	where FECHA_INICIO >=trunc(current_date,'MONTH') and empresa='004' and tipo_expediente='04003' and status_expediente='01') GROUP BY  CODIGO_SECUENCIA,EQUIPO_A_REALIZARLO, usuario_a_realizarlo
