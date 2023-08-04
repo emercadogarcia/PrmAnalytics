@@ -42,3 +42,12 @@ WHERE EMPRESA='004' AND STATUS_TAREA='01' and codigo_secuencia in ('030','031','
 
 SELECT CODIGO_SECUENCIA,NUMERO_EXPEDIENTE, EQUIPO_A_REALIZARLO, usuario_a_realizarlo, COUNT(NUMERO_EXPEDIENTE) TTL FROM crmexpedientes_lin
 WHERE EMPRESA='004' AND STATUS_TAREA='01' and codigo_secuencia in ('065') and numero_expediente in (Select numero_expediente from crmexpedientes_cab 	where FECHA_INICIO >=trunc(current_date,'MONTH') and empresa='004' and tipo_expediente='04003' and status_expediente='01') GROUP BY  CODIGO_SECUENCIA,EQUIPO_A_REALIZARLO, usuario_a_realizarlo
+
+/*ELIMINAR PLAN DE VENTA*/
+
+DELETE FROM PLANES_VENTAS_LIN_DET
+WHERE CODIGO = 1504 AND EMPRESA = '004' AND VERSION = 1 AND PERIODO = 5 AND EJERCICIO = 2023;
+COMMIT;
+
+SELECT * FROM PLANES_VENTAS_LIN_DET
+WHERE CODIGO = 1504 AND EMPRESA = '004' AND VERSION = 1 AND PERIODO = 5 AND EJERCICIO = 2023
