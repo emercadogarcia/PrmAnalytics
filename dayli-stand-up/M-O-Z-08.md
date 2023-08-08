@@ -15,4 +15,6 @@
 ## 04/08/2023
     1. Asignación de tareas a usuario en libra.
     -> 559753, 559382
-    2.
+## 08/08/2023
+    1. Acondicionamiento de expediente para el cierre.
+    2. 

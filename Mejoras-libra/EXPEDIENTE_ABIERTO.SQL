@@ -130,7 +130,7 @@ DECLARE
     GROUP BY CRMEQUIPOS_USUARIOS.USUARIO;
 BEGIN
     FOR USUARIOS IN C_EXPEDIENTES_C LOOP
-    html_content := html_content_inicio || '<table border="1" class="content-table"><thead><tr><th>Nro. expediente</th><th>Fecha</th><th>Descripción</th> <th>Típo Expediente</th></tr></thead><tbody>';
+        html_content := html_content_inicio || 'Estimado miembro de equipo: <br/>A continuación se muestran los expedientes que se encuentran abiertos y a la espera de atencion de uno de los integrantes del equipo, coordinar para su ejecucion y el proceso siga su curso normal:<hr/><table border="1" class="content-table"><thead><tr><th>Nro. expediente</th><th>Fecha</th><th>Descripción</th> <th>Típo Expediente</th></tr></thead><tbody>';
         FOR EXPEDIENTE_ABIERTO IN ( SELECT DISTINCT CRMEXPEDIENTES_LIN.NUMERO_EXPEDIENTE AS NUMERO_EXPEDIENTE,CRMEXPEDIENTES_LIN.EQUIPO_A_REALIZARLO AS EQUIPO,CRMEXPEDIENTES_CAB.STATUS_EXPEDIENTE AS STATUS,
             CRMEXPEDIENTES_CAB.FECHA_INICIO  AS FECHA_INICIO,CRMEXPEDIENTES_CAB.DESCRIPCION_EXPEDIENTE1 AS DESCRIPCION_EXPEDIENTE1,
             (SELECT DESCRIPCION FROM crmtipos_expediente t WHERE t.TIPO_EXPEDIENTE = CRMEXPEDIENTES_CAB.TIPO_EXPEDIENTE AND t.empresa = '004') AS TIPO_EXPEDIENTE
@@ -143,7 +143,11 @@ BEGIN
         END LOOP;
         html_content := html_content || '</table>'|| html_content_fin;
         PK_EMAIL.INICIALIZAR('OSINAGA');
+<<<<<<< HEAD
         PK_EMAIL.SET_ASUNTO('[RECORDATORIO] EXPEDIENTES ABIERTOS ASIGNADO(S) AL EQUIPO(S) AL QUE PERTENECE');
+=======
+        PK_EMAIL.SET_ASUNTO('[RECORDATORIO] EXPEDIENTES ABIERTOS ASIGNADO(S) AL EQUIPO(S) AL QUE PERTENECE.');
+>>>>>>> c83828f44adb6dd842c0dfbe970edc8b3f0efc7a
         PK_EMAIL.SET_CUERPO_HTML(html_content);
         PK_EMAIL.ADD_DESTINATARIO('TO', USUARIOS.CORREO);
         PK_EMAIL.ADD_DESTINATARIO('CC', 'daniel.lobo@promedical.com.bo,edgar.mercado@promedical.com.bo,marcelo.osinaga@promedical.com.bo');
@@ -162,12 +166,9 @@ DECLARE
 }.content-table thead tr {background-color: #28367f;color: #ffffff;text-align: left;font-weight: bold;}.content-table th,.content-table td {padding: 12px 15px;}
 .content-table tbody tr {border-bottom: 1px solid #dddddd;}.content-table tbody tr:nth-of-type(even) {background-color: #f3f3f3;
 }.content-table tbody tr:last-of-type {border-bottom: 2px solid #f80000;}.content-table tbody tr.active-row {font-weight: bold;color: #f80000;}</style><body>';
-    html_content CLOB := '';
-    html_content_fin CLOB := '</body></html>';
-    v_resultado VARCHAR2(30);
+    html_content CLOB := '';html_content_fin CLOB := '</body></html>';v_resultado VARCHAR2(30);
     CURSOR C_EXPEDIENTES_C IS
-    SELECT DISTINCT CRMEXPEDIENTES_LIN.USUARIO_A_REALIZARLO AS USUARIO_A_REALIZARLO,CRMEXPEDIENTES_LIN.EQUIPO_A_REALIZARLO AS EQUIPO_A_REALIZARLO,
-                CRMEXPEDIENTES_LIN.EMPRESA AS EMPRESA,CRMEXPEDIENTES_LIN.STATUS_TAREA AS STATUS_TAREA,USUARIOS.EMAIL AS CORREO
+    SELECT DISTINCT CRMEXPEDIENTES_LIN.USUARIO_A_REALIZARLO AS USUARIO_A_REALIZARLO,CRMEXPEDIENTES_LIN.EQUIPO_A_REALIZARLO AS EQUIPO_A_REALIZARLO, CRMEXPEDIENTES_LIN.EMPRESA AS EMPRESA,CRMEXPEDIENTES_LIN.STATUS_TAREA AS STATUS_TAREA,USUARIOS.EMAIL AS CORREO
     FROM CRMEXPEDIENTES_LIN,CRMEXPEDIENTES_CAB,USUARIOS
     WHERE CRMEXPEDIENTES_LIN.USUARIO_A_REALIZARLO = USUARIOS.USUARIO
     AND CRMEXPEDIENTES_CAB.NUMERO_EXPEDIENTE = CRMEXPEDIENTES_LIN.NUMERO_EXPEDIENTE AND CRMEXPEDIENTES_LIN.USUARIO_A_REALIZARLO IN ('MOSINAGA','EMERCADO','DLOBO')
@@ -175,7 +176,7 @@ DECLARE
     AND EQUIPO_A_REALIZARLO IS NULL AND USUARIO_A_REALIZARLO IS NOT NULL;
 BEGIN
         FOR USUARIOS IN C_EXPEDIENTES_C LOOP
-        html_content := html_content_inicio || '<table border="1" class="content-table"><thead><tr><th>Nro. expediente</th><th>Fecha</th><th>Descripción</th><th>Típo Expediente</th></tr></thead><tbody>';
+        html_content := html_content_inicio || 'Estimado usuario <strong>['||USUARIOS.USUARIO_A_REALIZARLO||']</strong>:<br/>A continuación se muestran los expedientes que estan pendientes y asignados a su usuario, gestionar su ejecucion para que el proceso sigua su curso normal:<hr/><table border="1" class="content-table"><thead><tr><th>Nro. expediente</th><th>Fecha</th><th>Descripción</th><th>Típo Expediente</th></tr></thead><tbody>';
             FOR EXPEDIENTE_ABIERTO IN (SELECT CRMEXPEDIENTES_CAB.NUMERO_EXPEDIENTE AS NUMERO_EXPEDIENTE,
                 CRMEXPEDIENTES_LIN.USUARIO_A_REALIZARLO AS USUARIO_A_REALIZARLO,CRMEXPEDIENTES_LIN.EQUIPO_A_REALIZARLO AS EQUIPO_A_REALIZARLO,
                 CRMEXPEDIENTES_CAB.EMPRESA AS EMPRESA,CRMEXPEDIENTES_CAB.FECHA_INICIO AS FECHA_INICIO,
@@ -189,7 +190,11 @@ BEGIN
             END LOOP;
             html_content := html_content || '</tbody></table>'|| html_content_fin;
             PK_EMAIL.INICIALIZAR('OSINAGA');
+<<<<<<< HEAD
             PK_EMAIL.SET_ASUNTO('[RECORDATORIO] EXPEDIENTES ABIERTOS QUE REQUIEREN DE SU ATENCION');
+=======
+            PK_EMAIL.SET_ASUNTO('[RECORDATORIO] EXPEDIENTES ABIERTOS QUE REQUIEREN DE SU ATENCION.');
+>>>>>>> c83828f44adb6dd842c0dfbe970edc8b3f0efc7a
             PK_EMAIL.SET_CUERPO_HTML(html_content);
             PK_EMAIL.ADD_DESTINATARIO('TO', USUARIOS.CORREO);
             PK_EMAIL.ADD_DESTINATARIO('CC', 'daniel.lobo@promedical.com.bo,edgar.mercado@promedical.com.bo,marcelo.osinaga@promedical.com.bo');
@@ -197,4 +202,6 @@ BEGIN
             html_content :='';
         END LOOP;
 END;
+
+
 
