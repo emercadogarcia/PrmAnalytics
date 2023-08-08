@@ -143,7 +143,7 @@ BEGIN
         END LOOP;
         html_content := html_content || '</table>'|| html_content_fin;
         PK_EMAIL.INICIALIZAR('OSINAGA');
-        PK_EMAIL.SET_ASUNTO('EXPEDIENTES ABIERTOS ASIGNADO A EQUIPOS QUE PERTENECE.');
+        PK_EMAIL.SET_ASUNTO('[RECORDATORIO] EXPEDIENTES ABIERTOS ASIGNADO(S) AL EQUIPO(S) AL QUE PERTENECE');
         PK_EMAIL.SET_CUERPO_HTML(html_content);
         PK_EMAIL.ADD_DESTINATARIO('TO', USUARIOS.CORREO);
         PK_EMAIL.ADD_DESTINATARIO('CC', 'daniel.lobo@promedical.com.bo,edgar.mercado@promedical.com.bo,marcelo.osinaga@promedical.com.bo');
@@ -189,7 +189,7 @@ BEGIN
             END LOOP;
             html_content := html_content || '</tbody></table>'|| html_content_fin;
             PK_EMAIL.INICIALIZAR('OSINAGA');
-            PK_EMAIL.SET_ASUNTO('EXPEDIENTES ABIERTOS ASIGNADO A SU USUARIO.');
+            PK_EMAIL.SET_ASUNTO('[RECORDATORIO] EXPEDIENTES ABIERTOS QUE REQUIEREN DE SU ATENCION');
             PK_EMAIL.SET_CUERPO_HTML(html_content);
             PK_EMAIL.ADD_DESTINATARIO('TO', USUARIOS.CORREO);
             PK_EMAIL.ADD_DESTINATARIO('CC', 'daniel.lobo@promedical.com.bo,edgar.mercado@promedical.com.bo,marcelo.osinaga@promedical.com.bo');
