@@ -166,6 +166,33 @@
 ## 06/07/2023
     1. Se envia correo sobre el manual de reseteo de contraseña de libra para autogestionar  el cambio.
     2. 
+# AGOSTO 2023
+## 04/08/2023
+    1. Reunion daily stand up vierens:
+        
+ * ¿Qué lograste ayer?
+        Se esta realizando ajsute al script envió de correos con bpm y haciendo pruebas en ambiente real.
+        Se ha atendido la solicitud de los campos para que no se muestren cuando sean vacación.
+       
+        * ¿En qué trabajarás hoy?
+        Trabajando el tema de habilitar el script en ambiente de pruebas.
+        Revisando los requerimientos solicitados por CH.
+       
+        * ¿Hay algo que esté obstaculizando el trabajo que estás realizando?
+        Actualmente ninguno, estamos solo a la espera del requerimiento de CH para comenzar con el tema de ajuste a las solicitudes de beneficios.
+    
+## 08/08/2023
+    1. Reunion con equipo de capital humano para ver tema de la solicitud de mejoramiento de flujos de beneficios. Se solicita que nos envien el requimientos con los siguientes datos:
+        a. Formatos de docuemntos que desean compartir.
+        b. Flujo qu edebe seguir ,cada proceso de solicitud de beneficio (por cada tipo de solicitud)
+        c. Restricciones y validaciones que se debe agregar por cada tipo de solicitud.
+
+    2. Me reuni con el equipo de capital humano (EM y KF) para revisar el tema de ifniquito. Se ha acordado que deben realizar mas pruebas y aplicar ciertos ajustes por incidecnias por el tema administrativo que se maneja dentro de promedical.
+    
+
+
+
+
 
 # Marcelo Osinaga Zabala
 
