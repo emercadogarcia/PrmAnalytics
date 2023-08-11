@@ -188,7 +188,11 @@
         c. Restricciones y validaciones que se debe agregar por cada tipo de solicitud.
 
     2. Me reuni con el equipo de capital humano (EM y KF) para revisar el tema de ifniquito. Se ha acordado que deben realizar mas pruebas y aplicar ciertos ajustes por incidecnias por el tema administrativo que se maneja dentro de promedical.
+    3. Se habilita alerta para envio de correos con expedientes abiertos por cada equipo y usuario que este asignado
+    4. se Actualiza el paquete de pk_proemdical
     
+## 09/08/2023
+
 
 
 
