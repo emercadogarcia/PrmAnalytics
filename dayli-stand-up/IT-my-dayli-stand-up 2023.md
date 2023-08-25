@@ -267,12 +267,173 @@
     
 - ¿Hay algo que esté obstaculizando el trabajo que estás realizando?
 * De momento ninguna.
+
+## Datos de los daily standup.
+/******************/
+Fecha: 24/ago/2023 11:00
+
+What did you do yesterday?
+
+EMG: me reuni con SIGLESIAS via ms teams para revisar las configuraciones y plantillas contables y se realizo los ajustes necesarios.
+EMG: Se ha realizado pruebas adicionales para probar la funcionalidad que buscaban y pues a quedado resuelto el tema y se ha enviado correo de respaldo para la tarea ya concluida.
+What will you do today?
+
+EMG: Dar acceso a programa grupo de usuarios a MOZ.
+EMG: Validar flujo de bpm de compras para que se habilite a un 80%.
+Are there any blockers?
+
+ninguna por el momento.
+
+
+
+2 days ago
+EM
+Edgar Mercado Garcia
+2 days ago
+Fecha: 23/ago/2023 09:30
+
+What did you do yesterday?
+
+EMG: Se envio listado de puestos a MOZ cc a DL.
+EMG: Se ha revisado tema de plantilla contable que solicito SIGLESIAS para agregar el CENTRO de COSTE, falta concluir.
+EMG: Se tuvo reunion con DL sobre consultas sobre las vacaciones.
+What will you do today?
+
+EMG: Reunirse con SIGLESIAS para ver  el tema de las plantillas contables.
+EMG: Proseguir con la configuracion de las plantillas contables.
+EMG: Validar flujo de bpm  de compras.
+Are there any blockers?
+
+EMG: Se requiere informacion sobre las plantillas que desean trabajar o modificar en contabilidad.
+
+
+
+
+4 days ago
+EM
+Edgar Mercado Garcia
+4 days ago
+Fecha reunion: 21/ago/2023 14:15
+
+What did you do yesterday?
+
+MOZ: se envia correos sobre las solicitudes 1 y 2.
+MOZ: trabajando con notificaciones a los jefes 
+EMG: de vacaciones.
+What will you do today?
+
+EMG: enviar listado de puestos de empleados [Estructura].
+EMG: ver tema permiso en maestro cliente (cambiar lista = MOZ)
+MOZ: continaura con las notificacion de vacacion a jefes y/o gerentes de uen.
+Are there any blockers?
+
+Necesitamos saber la descripcion de los codigos de puesto.
+
+
+
+10 days ago
+PC
+PRM-Edgar corp
+10 days ago
+What did you do yesterday?
+
+EMG: Reprogramación de tareas para DEV.
+EMG: Envio de correo solicitando fechas probables de entregas de los requerimientos  por parte de CH.
+EMG: Solicitud de fechas para el tema de finiquitos a CH.
+What will you do today?
+
+EMG: Envió de nuevos kpi para el mes de agosto reemplazando el anterior
+EMG: Enviar el A10 de NDC editado para que sea enviado a Edisa.
+Are there any blockers?
+
+Ninguno.
+
+
+
+11 days ago
+EM
+Edgar Mercado Garcia
+11 days ago
+What did you do yesterday?
+
+MOZ: Trabajando en alerta envio reporta mes anterior con la interfas propia, no toma el fitlro con la fecha
+EMG:
+What will you do today?
+
+MOZ: Continuar revision de envio alerta de bonapharm.
+MOZ: revisar solicitud ee ch.
+EMG: Para flujo estandar de solicitud de beneficios 09004.
+EMG: Reprogramacion de tareas.
+Are there any blockers?
+
+Ninguno por el momento
+
+
+
+14 days ago
+PC
+PRM-Edgar corp
+14 days ago
+What did you do yesterday?
+
+EMG: Tuvimos reunon cone el equipo de finanzas y operaicones para revisar el tema del A10 sobre el desarrollo de la nueva mejora al proceso de generacion de notas de credito y anulacion de factuas. 
+EMG: Quieren tener un reporte de facturas con notas de credito aplicada con detalle de productos y unidades, para obtener el saldo. 
+EMG: Se participo con Daniel L. en la reunion con operaciones donde requieren tener trazabilidad de pedidos los cuales generan doble solcitud cuando es notas de credito/devoluciones. 
+EMG: Se acutalizo perfiles de MGUERRA, que estaba con permiso para almacenes como asi tambien el correo. 
+MOZ: Realizo pruebas de envio de correos con expedientes asignados a cada usuario y que esten en situacion de abiertos.
+MOZ: Realizo ajustes al tema correos duplicados en el maestro de usuarios.
+What will you do today?
+
+EMG: Revisar las tareas solicitadas desde capital humano para ver de reemplazar por otra tarea debido a la falta de informacion desde CH
+EMG:  Revisar bpm compras y programas
+MOZ: Envio de reporte del mes anterior de Bonapharm.
+Are there any blockers?
+
+Ninguno.
+
+
+
+16 days ago
+PC
+PRM-Edgar corp
+16 days ago
+What did you do yesterday?
+
+Reunión con Edson Montoya, Marcelo O., Karla de la Fuente y mi persona para ver el tema de ampliación información de las vacaciones.
+Por la tarde me he reunido con Edson Montoya y Karla de la Fuente para revisar cuestiones de los finiquitos y sus cálculos, los cuales se ha determinado que deben realizar mas pruebas antes de hacer su solicitud. Adicionalmente se ha solicitado que se pueda avanzar con el tema de el calculo de los QUINQUENIOS ya que entra como parte de los finiquitos.
+What will you do today?
+
+Validar el envio de correo correctamente.
+Revisar tema de el KPI asignado para este mes.
+Revisar solicitud de Edson Montoya.
+Are there any blockers?
+
+No se tiene la retroalimentación de CH sobre los flujos solicitados.
+
+
+
+PC
+PRM-Edgar corp
+17 days ago
+What did you do yesterday?
+
+Trabajando en cargar el paquete para envio masivo de correos con bpm abiertos.
+Se planifico tareas
+What will you do today?
+
+Probar en real el paquete cargado al AMBIENTE REAL.
+Reunirme con Capital humano para tener retroalimentación de lo solicitado.
+Enviar correo de notificación sobre la reunión y reunirse en horas de la tarde para el tema de CONTABILIZACION DE FINIQUITO
+Are there any blockers?
+
+Solo la ausencia de Edson quien tiene vacaciones programadas y las tareas se pueden retrasar por ese motivo.
+
 ## 24/08/2023
 Fecha: 24/ago/2023 11:00
 
 ### What did you do yesterday?
 
-EMG: me reuni con SIGLESIAS via ms teams para revisar las configuraciones y plantillas contables y se realizo los ajustes necesarios.
+EMG: me reuniON con SIGLESIAS via ms teams para revisar las configuraciones y plantillas contables y se realizo los ajustes necesarios.
 EMG: Se ha realizado pruebas adicionales para probar la funcionalidad que buscaban y pues a quedado resuelto el tema y se ha enviado correo de respaldo para la tarea ya concluida.
 
 ### What will you do today?
@@ -284,7 +445,20 @@ EMG: Validar flujo de bpm de compras para que se habilite a un 80%.
 ninguna por el momento.
 
 ## 25/08/2023
+### What did you do yesterday?
+* EMG: Congiguracion de las plantillas disponible ambientes.
+* EMG: SUIPHAR sobre tema del campo del medico que receta, adicional nombre del paciente, el manejo es administrativo sobre la "creacion clientes".
+* MOZ: Creando un perfil, grupo de TI - calidad.
+* MOZ: Revisando datos de los usuarios y teniendo hallazgos, dodne se van pasar en correo.
 
+### What will you do today?
+* EMG: Trabajan do con el correo sobre la solicitud de suiphar para el tema de pacientes.
+* EMG: Flujo de compras - 03003.
+* MOZ: Continuar de actualizar grupos de usuarios.
+* MOZ: Analizar data.
+
+#### Are there any blockers?
+* Ninguno.
 
 # Marcelo Osinaga Zabala
 
