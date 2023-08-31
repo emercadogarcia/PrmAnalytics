@@ -460,6 +460,35 @@ ninguna por el momento.
 #### Are there any blockers?
 * Ninguno.
 
+## 28/08/2023
+### What did you do yesterday?
+* EMG: Enive correo sobre el tema de la solicitud de Suiphar.
+* EMG: Se realiza revision d flujo 03003.
+* MOZ: Publicacion de las notificaciones de notificaciones de vacaciones.
+
+### What will you do today?
+* EMG: continguar con bpm 03003.
+* MOZ: Reunion con Daniel Lobo.
+* MOZ: Revision de consultas.
+
+#### Are there any blockers?
+* Ninguno.
+
+## 29/08/2023
+### What did you do yesterday?
+* EMG: Enive correo sobre el tema de la solicitud de Suiphar.
+* EMG: Se realiza revision d flujo 03003.
+* MOZ: 
+
+### What will you do today?
+* EMG: 
+* EMG: 
+* MOZ: 
+* MOZ: 
+
+#### Are there any blockers?
+* 
+
 # Marcelo Osinaga Zabala
 
 ## 06/03/2023
