@@ -100,3 +100,4 @@ else
     pkpantallas.comando_plug_in ( 'SIP', 'CAMPOS.ITEMN014', 'VISIBLE', 'PROPERTY_TRUE' );
     pkpantallas.comando_plug_in ( 'SIP', 'CAMPOS.ITEMN012', 'VISIBLE', 'PROPERTY_TRUE' );
 end if;
+

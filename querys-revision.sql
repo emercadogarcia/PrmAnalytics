@@ -51,3 +51,24 @@ COMMIT;
 
 SELECT * FROM PLANES_VENTAS_LIN_DET
 WHERE CODIGO = 1504 AND EMPRESA = '004' AND VERSION = 1 AND PERIODO = 5 AND EJERCICIO = 2023
+
+/*=======CONSULTAR PPTO CARTERA=========*/
+
+UPDATE alrt_alertas SET procedimiento_ejecutar = 'PKALRTJOB.SET_PROPIEDAD(''INICIALIZAR_INFORMES_ADJUNTOS'', ''S'');
+PKALRTJOB.ADD_ADJUNTO_GI(''BOL_VTA_FLASH_B'', ''Ventas_Mes.xlsx'', ''17'', ''004'', ''MOSINAGA'', ''P2427'', ''EXCELXML'', 428875); commit;' WHERE numero_alerta = 4009;
+COMMIT;
+PKALRT.GRABAR_COLA_ALERTAS(p_numero_alerta => 4009, p_asunto_alerta=>'RESUMEN DE VENTAS BONAPHARM MES ANTERIOR'|| to_char(sysdate,'MM-YYYY'), p_notificar_mail_to => 'marcelo.osinaga@promedical.com.bo', p_notificar_mail_cc => 'marcelo.osinaga@promedical.com.bo', p_texto_alerta_html_clob => '<h3><br>Buenos dias:<br/>');
+COMMIT;
+
+
+
+UPDATE alrt_alertas SET procedimiento_ejecutar = 'PKALRTJOB.SET_PROPIEDAD(''INICIALIZAR_INFORMES_ADJUNTOS'', ''S'');
+PKALRTJOB.ADD_ADJUNTO_GI(''BOL_VTA_FLASH_B'', ''Falsh_ventas_bnp.xlsx'', ''17'', ''004'', ''EMERCADO'', ''P2427'', ''EXCELXML'', 228354); commit;' WHERE numero_alerta = 4009;
+COMMIT;
+PKALRT.GRABAR_COLA_ALERTAS(p_numero_alerta => 4009, p_asunto_alerta=>'[BONAPHARM]- reporte de ventas del mes anterior'|| to_char(sysdate,'MM-YYYY'), p_notificar_mail_to => 'edgar.mercado@promedical.com.bo,marcelo.osinaga@promedical.com.bo', p_notificar_mail_cc => 'edgar.mercado@promedical.com.bo', p_texto_alerta_html_clob => '<h3><br>Buenos dias:<br/>
+<br>Adjunto las ventas registradas del mes anterior.
+ <br/></h3>
+{GI:BOL_VTA_FLASH_B:17:004:EMERCADO:P2427:HTML:228354}');
+commit;
+UPDATE alrt_alertas SET procedimiento_ejecutar = '' WHERE numero_alerta = 4009;
+COMMIT;
