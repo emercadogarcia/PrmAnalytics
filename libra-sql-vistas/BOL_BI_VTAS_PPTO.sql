@@ -43,15 +43,19 @@ SELECT /*BOL_BI_VTAS_PPTO by Edgar Mercado*/
        , sum(V_FACTURAS_VENTAS_LIN.IMPORTE_NETO_LIN-(V_FACTURAS_VENTAS_LIN.IMPORTE_NETO_LIN*FACTURAS_VENTAS.DTOS_GLOBAL)/100)        IMP_FACTURADO
        , 0                                                                                                                           PPTO_UND
        , 0                                                                                                                           PPTO_VLR
-       , CASE
+       , CASE /*nUEVA CONFGG: 08/09/2023*/
+             when articulos.codigo_estad3 in ('GRUNENTHAL')
+             THEN trim(subStr(facturas_ventas.RPN2,0,3))
+             when articulos.codigo_estad5 in ('040101')
+             THEN trim(subStr(facturas_ventas.RPN2,0,3))
              when articulos.codigo_estad3 in ('HERSIL')
              THEN trim(subStr(facturas_ventas.RPN4,0,3))
-             when articulos.codigo_estad3 in ('BIODUE','BONAPHARM')
-             THEN trim(subStr(facturas_ventas.RPN2,0,3))
+             when articulos.codigo_estad3 in ('BONAPHARM')
+             THEN trim(subStr(facturas_ventas.RPN5,0,3))
              when articulos.codigo_estad3 in ('LAFAGE')
-             THEN trim(subStr(facturas_ventas.RPN3,0,3))
+             THEN trim(subStr(facturas_ventas.RPN6,0,3))
              else agentes.nif
-          end GESTOR_VTAS
+          end GESTOR_VTAS /* Fin nueva confgi*/
 		 , V_FACTURAS_VENTAS_LIN.ALMACEN COD_ALMAC
 FROM
          (
@@ -149,6 +153,44 @@ FROM
                                      )
                        )
                        RPN4
+                     , (
+                              SELECT
+                                     NOMBRE
+                              FROM
+                                     VALORES_CLAVES V
+                              WHERE
+                                     V.CLAVE          ='RPN5'
+                                     AND V.VALOR_CLAVE=
+                                     (
+                                            SELECT
+                                                   VALOR_CLAVE
+                                            FROM
+                                                   CLIENTES_CLAVES_ESTADISTICAS c
+                                            WHERE
+                                                   c.CLAVE             ='RPN5'
+                                                   AND c.CODIGO_CLIENTE=FACTURAS_VENTAS.CLIENTE
+                                                   AND c.CODIGO_EMPRESA=facturas_ventas.empresa
+                                     )
+                       ) RPN5
+                     , (
+                              SELECT
+                                     NOMBRE
+                              FROM
+                                     VALORES_CLAVES V
+                              WHERE
+                                     V.CLAVE          ='RPN6'
+                                     AND V.VALOR_CLAVE=
+                                     (
+                                            SELECT
+                                                   VALOR_CLAVE
+                                            FROM
+                                                   CLIENTES_CLAVES_ESTADISTICAS c
+                                            WHERE
+                                                   c.CLAVE             ='RPN6'
+                                                   AND c.CODIGO_CLIENTE=FACTURAS_VENTAS.CLIENTE
+                                                   AND c.CODIGO_EMPRESA=facturas_ventas.empresa
+                                     )
+                       ) RPN6
                      , (
                               SELECT
                                      c.razon_social
@@ -272,6 +314,8 @@ GROUP BY
        , facturas_ventas.RPN2
        , facturas_ventas.RPN3
        , facturas_ventas.RPN4
+       , facturas_ventas.RPN5
+       , facturas_ventas.RPN6
        , DECODE(facturas_ventas.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES','ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE',FACTURAS_VENTAS.CADENA)
        , agentes_clientes.agente
        , agentes.nif
@@ -303,6 +347,8 @@ SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.pe
      , clientes.RPN2
      , clientes.RPN3 /*nuevo campo adicionado*/
      , clientes.RPN4
+     , clientes.RPN5
+     , clientes.RPN6
      , DECODE(CLIENTES.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES','ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE',CLIENTES.CADENA) CADENA_AUX
      , agentes_clientes.agente
      , agentes.nif                 COD_RPN
@@ -377,15 +423,19 @@ SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.pe
      ,'PPTO'                        FUENTE, 0 CANTIDAD, 0 IMP_NETO, 0 IMP_FACTURADO
      , v_xls_planes_ventas.cantidad PPTO_UND
      , v_xls_planes_ventas.importe  PPTO_VLR
-     , CASE
+     , CASE /*se cambia la config*/
+              when articulos.codigo_estad3 in ('GRUNENTHAL')
+                THEN trim(subStr(clientes.RPN2,0,3))
+              when articulos.codigo_estad5 in ('040101')
+                THEN trim(subStr(clientes.RPN2,0,3))
               when articulos.codigo_estad3 in ('HERSIL')
                 THEN trim(subStr(clientes.RPN4,0,3))
-              when articulos.codigo_estad3 in ('BIODUE','BONAPHARM')
-                THEN trim(subStr(clientes.RPN2,0,3))
+              when articulos.codigo_estad3 in ('BONAPHARM')
+                THEN trim(subStr(clientes.RPN5,0,3))
               when articulos.codigo_estad3 in ('LAFAGE')
-                THEN trim(subStr(clientes.RPN3,0,3))
+                THEN trim(subStr(clientes.RPN6,0,3))
                 else agentes.nif
-         end GESTOR_VTAS
+         end GESTOR_VTAS  /* Modifciado*/
 	   , V_XLS_PLANES_VENTAS.ALMACEN COD_ALMAC
 FROM
        V_XLS_PLANES_VENTAS
@@ -483,6 +533,46 @@ FROM
                                    )
                      )
                      RPN4
+                   , (
+                            SELECT
+                                   NOMBRE
+                            FROM
+                                   VALORES_CLAVES V
+                            WHERE
+                                   V.CLAVE          ='RPN5'
+                                   AND V.VALOR_CLAVE=
+                                   (
+                                        SELECT
+                                                 VALOR_CLAVE
+                                          FROM
+                                                 CLIENTES_CLAVES_ESTADISTICAS c
+                                          WHERE
+                                                 c.CLAVE             ='RPN5'
+                                                 AND c.CODIGO_CLIENTE=clientes.codigo_rapido
+                                                 AND c.CODIGO_EMPRESA=clientes.codigo_empresa
+                                   )
+                     )
+                     RPN5
+                   , (
+                            SELECT
+                                   NOMBRE
+                            FROM
+                                   VALORES_CLAVES V
+                            WHERE
+                                   V.CLAVE          ='RPN6'
+                                   AND V.VALOR_CLAVE=
+                                   (
+                                          SELECT
+                                                 VALOR_CLAVE
+                                          FROM
+                                                 CLIENTES_CLAVES_ESTADISTICAS c
+                                          WHERE
+                                                 c.CLAVE             ='RPN6'
+                                                 AND c.CODIGO_CLIENTE=clientes.codigo_rapido
+                                                 AND c.CODIGO_EMPRESA=clientes.codigo_empresa
+                                   )
+                     )
+                     RPN6
               FROM
                      CLIENTES
        )
