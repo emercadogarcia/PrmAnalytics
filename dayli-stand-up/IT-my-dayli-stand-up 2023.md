@@ -505,6 +505,37 @@ ninguna por el momento.
 #### Are there any blockers?
 * Cambio de prioridades y kpi del me.
 
+## 14/09/2023
+### What did you do yesterday?
+* EMG: Se ha continguarado la lista de valores para mejoramiento BPM 09004.
+    Código	Descripción
+    020	PRESTAMOS PERSONAL
+    040	VACACIONES
+    050	CAPACITACION
+    060	PERMISO
+    062	PERMISO POR CITA MEDICA
+    065	LICENCIA POR PATERNIDAD
+    066	LICENCIA POR FALLECIMIENTO
+    067	LICENCIA SIN GOCE DE HABER
+    068	LICENCIA POR BAJA MEDICA
+    B010	SOLICITUD DE CERTIFICADOS DE TRABAJO
+    B011	SOLICITUD DE QUINQUENIO
+* EMG: Se ha generado pruebas del triggers para creacion de BPM importacion, el cual no se pudo crear el 03003A pero si el 03003.
+* EMG: No se pudo reunir con Diego Lopez Debido a cambios en los OKR.
+
+### What will you do today?
+* EMG: Se revisara tema de BPM 03003A para habilitar su lanzamiento con el triger.
+* EMG: Validacion de datos de bpm 03003A.
+* EMG: Creacion de tipo de regimen baja medica:
+Código	Descripción	            Padre	Padre (Descripción)
+B005	ENFERMEDAD COMUN	    RRHH	RRHH - CAPITAL HUMANO
+B010	ACCIDENTE DE TRABAJO	RRHH	RRHH - CAPITAL HUMANO
+B015	MATERNIDAD	            RRHH	RRHH - CAPITAL HUMANO
+B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
+
+#### Are there any blockers?
+* Ninguna.
+
 
 
 ## 29/08/2023
