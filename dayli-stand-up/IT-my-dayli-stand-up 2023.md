@@ -474,6 +474,39 @@ ninguna por el momento.
 #### Are there any blockers?
 * Ninguno.
 
+## 11/09/2023
+### What did you do yesterday?
+* EMG: Entrega de kpi.
+* EMG: Modificacion reprote de BI con nueva estructura de agentes.
+* EMG: Se agrega dato estadistico de RPN5 Y RPN6 en funcion del rpn2.
+* MOZ: Lunes capacitacion Astrid y Delia refrozamiento en LIBRA
+* MOZ: Interfaz para administracion, migracio al servidor nuevo, para los reportes.
+* MOZ: 
+
+### What will you do today?
+* EMG: continguar bpm para exportaciones.
+* MOZ: Revisar y quitar correos de personas retiradas.
+* MOZ: Enviar a Javier para que tamien los quite de la lista de distribucion.
+
+#### Are there any blockers?
+* MOZ: No se tiene informacion sobre los temas de mejoramiento solicitado por capital humano.
+
+## 13/09/2023
+### What did you do yesterday?
+* EMG: Trabaje modificando el reprote de BI con la nueva configuracion solicitada.
+    - Reporte de BI GERENCIA.
+    - Reporte de BI Comercial.
+
+### What will you do today?
+* EMG: continguar lista de valores para mejoramiento BPM 09004.
+* EMG: Habilitar generacion bpm con triggers para creacion directa.*
+* EMG: Reunire con Diego Lopez para ver el avance del bpm 03003A.
+
+#### Are there any blockers?
+* Cambio de prioridades y kpi del me.
+
+
+
 ## 29/08/2023
 ### What did you do yesterday?
 * EMG: Enive correo sobre el tema de la solicitud de Suiphar.
