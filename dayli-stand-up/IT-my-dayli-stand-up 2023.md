@@ -536,6 +536,29 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 #### Are there any blockers?
 * Ninguna.
 
+## 15/09/2023
+### What did you do yesterday?
+* EMG: Se revisaro tema de BPM 03003A para habilitar su lanzamiento desde codigo.
+* EMG: Validacion de datos de bpm 03003A-flujos.
+* EMG: Creacion de tipo de regimen baja medica:
+Código	Descripción	            Padre	Padre (Descripción)
+B005	ENFERMEDAD COMUN	    RRHH	RRHH - CAPITAL HUMANO
+B010	ACCIDENTE DE TRABAJO	RRHH	RRHH - CAPITAL HUMANO
+B015	MATERNIDAD	            RRHH	RRHH - CAPITAL HUMANO
+B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
+* MOZ: Revisision de usuarios y dar de baja a usuarios retirados.
+* MOZ: Revisar y estudiar flujo baja medicas.
+* MOZ: envio de reporte de  backorder para gestores (link).
+
+
+### What will you do today?
+* EMG: Continuar con la reviion de bpm de importacion para lanzamiento por codigo.
+* EMG: Reunion con Diego Lopez, para ver avance del bpm importacion.
+* MOZ: Implementar el bpm, adicionando el campo solicitado y realizar validacion,.
+
+#### Are there any blockers?
+* Ninguna.
+
 
 
 ## 29/08/2023
