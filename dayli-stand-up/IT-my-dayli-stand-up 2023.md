@@ -561,7 +561,7 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 
 
 
-## 29/08/2023
+## 20/08/2023
 ### What did you do yesterday?
 * EMG: Enive correo sobre el tema de la solicitud de Suiphar.
 * EMG: Se realiza revision d flujo 03003.
@@ -590,6 +590,23 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 #### Are there any blockers?
 * MOZ: Ninguno.
 * EMG: Ninguno.
+
+## 27/09/2023
+### What did you do yesterday?
+* EMG: Revision de configuracion de plantillas contables [CC_COBDIR] y reponder correo de consulta de SIGLESIAS.
+* EMG: 
+
+### What will you do today?
+* EMG: Revisar correos y validar bpm compras e importaciones.
+* MOZ: confeccionar acta de reunion con capital Humano (Karla de la Fuente) con el detalle de puntos acordados.
+* MOZ: Completar flujo de certificado de trabajo.
+
+
+#### Are there any blockers?
+* MOZ: Ninguno.
+* EMG: Ninguno.
+
+
 
 
 # Marcelo Osinaga Zabala
