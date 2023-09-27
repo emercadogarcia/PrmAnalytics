@@ -569,12 +569,28 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 
 ### What will you do today?
 * EMG: 
-* EMG: 
-* MOZ: 
-* MOZ: 
+
 
 #### Are there any blockers?
 * 
+
+## 26/09/2023
+### What did you do yesterday?
+* EMG: vacaciones.
+* MOZ: Complementando bpm baja medica, nos reunimos con DLOBO con capital humano.
+* MOZ: Se ha completado el reporte de baja medica, pendiente confirmacion.
+* MOZ: Solicitud de certificado de trabajo, pendiente generacion documento del certificado.
+
+### What will you do today?
+* EMG: Revisar correos y validar bpm compras e importaciones.
+* MOZ: confeccionar acta de reunion con capital Humano (Karla de la Fuente) con el detalle de puntos acordados.
+* MOZ: Completar flujo de certificado de trabajo.
+
+
+#### Are there any blockers?
+* MOZ: Ninguno.
+* EMG: Ninguno.
+
 
 # Marcelo Osinaga Zabala
 
