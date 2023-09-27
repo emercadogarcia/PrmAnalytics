@@ -594,13 +594,13 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 ## 27/09/2023
 ### What did you do yesterday?
 * EMG: Revision de configuracion de plantillas contables [CC_COBDIR] y reponder correo de consulta de SIGLESIAS.
-* EMG: 
+* EMG: Revise correo y tambien se contesto los mismos que estaban relacionados con el area.
+* EMG: Se celebro el daily standup.
 
 ### What will you do today?
-* EMG: Revisar correos y validar bpm compras e importaciones.
-* MOZ: confeccionar acta de reunion con capital Humano (Karla de la Fuente) con el detalle de puntos acordados.
-* MOZ: Completar flujo de certificado de trabajo.
-
+* EMG: Solicitar respuesta de la consulta de DLOBO sobre las bajas medicas.
+* EMG: Solcitar acta de reunion celebrada con capital humano a MOZ.
+* EMG: Validar
 
 #### Are there any blockers?
 * MOZ: Ninguno.
