@@ -600,12 +600,11 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 ### What will you do today?
 * EMG: Solicitar respuesta de la consulta de DLOBO sobre las bajas medicas.
 * EMG: Solcitar acta de reunion celebrada con capital humano a MOZ.
-* EMG: Validar
+* EMG: Validar estructura plantilla contable para validar datos si fuese necesario.
+* EMG: Programar revision de bpm importaciones 03003A.
 
 #### Are there any blockers?
-* MOZ: Ninguno.
 * EMG: Ninguno.
-
 
 
 
