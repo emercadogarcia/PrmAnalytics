@@ -606,6 +606,21 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 #### Are there any blockers?
 * EMG: Ninguno.
 
+## 28/09/2023
+### What did you do yesterday?
+* EMG: Se solicita respuesta sobre las bajas medicas a MOZ.
+* EMG: Se solicito acta de reunion y MOZ lo paso por ms teams.
+* EMG: Se reviso plantillas contables y posibles solucion a consulta realizada por SIGLESIAS.
+* EMG: Se envia a DLOBO correo pidiendo ayuda sobre tema de gestionar respuestas.
+
+### What will you do today?
+* EMG: Enviar correo de solcitando recordatorio sobre respuesta de la plantilla contable CC_COBDIR.
+* EMG: Revision de modelado de datos para reportes.
+* EMG: Cambiar configuracion de plantillas contables de acuerdo a la formula de reparto.
+
+#### Are there any blockers?
+* EMG: Ninguno.
+
 
 
 # Marcelo Osinaga Zabala
