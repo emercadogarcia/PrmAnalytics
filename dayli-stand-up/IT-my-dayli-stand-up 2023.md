@@ -621,6 +621,28 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 #### Are there any blockers?
 * EMG: Ninguno.
 
+## 29/09/2023
+### What did you do yesterday?
+* EMG: Se Envia correo de solcitando recordatorio sobre respuesta de la plantilla contable CC_COBDIR.
+* EMG: Se revisa el modelado de datos para reportes.
+* EMG: Se cambio configuracion de plantillas contables de acuerdo a la formula de reparto.
+* EMG: Se genera alerta por correo electronico para mostrar los expedientes duplicados y se pone en produccion.
+* EMG: Participe de la reunion de generacion de presupuesto comercial, el cual requerian hacer a nivel de region-cliente-producto. Se expursieron los puntos requeridos como tambien las posibles formas de obtener y tambien se hicieron notar los resultados que pueden surgir aplicando cierto metodos.
+* MOZ: Se ha creado el bpm solicitud certificado de trabajo, pendiente de probar.
+* MOZ: Se ha creado el reporte de solicitud de certificado de trabajo.
+* MOZ: Se ha creado el bpm bajas medicas.
+* MOZ: Se ha generado el reoporte de baja medicas.
+
+### What will you do today?
+* EMG: Probar generacion de bpm importacion desde codigo.
+* EMG: Verificaicon de funcionamiento de alerta de bpm duplicados.
+* MOZ: Completar informe: Agregar campo de UEN y regional al reporte de baja medica.
+* MOZ: Ver la forma ideal de ocultar campos con el tipo de solicitud.
+
+#### Are there any blockers?
+* EMG: Ninguno.
+* MOZ: Limitacion validacion de tipo de solcitud para ocultar campos.
+
 
 
 # Marcelo Osinaga Zabala
