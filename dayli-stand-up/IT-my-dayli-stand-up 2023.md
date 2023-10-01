@@ -643,6 +643,26 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 * EMG: Ninguno.
 * MOZ: Limitacion validacion de tipo de solcitud para ocultar campos.
 
+## 02/10/2023
+### What did you do yesterday?
+* EMG: Se realiza pruebas de generacion de bpm importacion desde codigo.
+* EMG: Se ha realizado seguimiento a la Verificaicon de funcionamiento de alerta de bpm duplicados.
+
+* MOZ: Completar informe: Agregar campo de UEN y regional al reporte de baja medica.
+* MOZ: Ver la forma ideal de ocultar campos con el tipo de solicitud.
+
+### What will you do today?
+* EMG: Enviar kpi del mes cerrado y consultar sobre los tiempo de entrega de kpi.
+* EMG: Generar documento kpi de octubre 2023.
+* emg: Consultar sobre que tema se trabajara este mes en base a lo que solicitaron.
+* EMG: Inciar pruebas en bpm de importaciones.
+
+* MOZ:
+
+#### Are there any blockers?
+* EMG: Ninguno.
+* MOZ: 
+
 
 
 # Marcelo Osinaga Zabala
