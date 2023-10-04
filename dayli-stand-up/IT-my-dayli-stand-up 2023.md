@@ -647,21 +647,49 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 ### What did you do yesterday?
 * EMG: Se realiza pruebas de generacion de bpm importacion desde codigo.
 * EMG: Se ha realizado seguimiento a la Verificaicon de funcionamiento de alerta de bpm duplicados.
-
-* MOZ: Completar informe: Agregar campo de UEN y regional al reporte de baja medica.
-* MOZ: Ver la forma ideal de ocultar campos con el tipo de solicitud.
+* MOZ: Se completo informe: "Agregar campo de UEN y regional al reporte de baja medica".
+* MOZ: Se ha completado de ocultar campos con el tipo de solicitud.
 
 ### What will you do today?
 * EMG: Enviar kpi del mes cerrado y consultar sobre los tiempo de entrega de kpi.
 * EMG: Generar documento kpi de octubre 2023.
 * emg: Consultar sobre que tema se trabajara este mes en base a lo que solicitaron.
 * EMG: Inciar pruebas en bpm de importaciones.
-
-* MOZ:
+* MOZ: Atencion de ticket.
 
 #### Are there any blockers?
 * EMG: Ninguno.
-* MOZ: 
+* MOZ: Ninguno.
+
+## 03/10/2023
+### What did you do yesterday?
+* EMG: Se Envia kpi del mes cerrado.
+* EMG: Se realiza reunion para validar las solicitudes del BI.
+* MOZ: Atencion de ticket.
+
+### What will you do today?
+* EMG: Enviar kpi del mes cerrado y consultar sobre los tiempo de entrega de kpi.
+* emg: Consultar sobre que tema se trabajara este mes en base a lo que solicitaron.
+* EMG: Inciar pruebas en bpm de importaciones.
+* MOZ: Atencion de ticket.
+
+#### Are there any blockers?
+* EMG: Ninguno.
+
+## 04/10/2023
+### What did you do yesterday?
+* EMG: Se Envia kpi del mes cerrado.
+* EMG: Se realiza reunion para validar las solicitudes del BI.
+* MOZ: Atencion de ticket.
+
+### What will you do today?
+* EMG: Enviar solciitud de flujo a capital humano sobre los nueva solicitud.
+* emg: Revisar ticket de contabilidad - [ROY MAURICIO PEDRAZA]
+* EMG: Inciar pruebas en bpm de importaciones.
+
+#### Are there any blockers?
+* EMG: Ninguno.
+
 
 
 
