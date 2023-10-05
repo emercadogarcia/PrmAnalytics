@@ -690,7 +690,21 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 #### Are there any blockers?
 * EMG: Ninguno.
 
+## 05/10/2023
+### What did you do yesterday?
+* EMG: Se Envia solciitud de flujo a capital humano sobre los nueva solicitud.
+* emg: Se Revisa ticket de contabilidad - [ROY MAURICIO PEDRAZA] el tema e por la validacion que tiene el campo al momento de ingresar por el mismo.
+* Se revisa ticket sobre distribucion de centros de costo para empleados en planillas - SIGLESIAS - Se pide que puedan validar los datos que se generaron si existe la distribucion.
+* 
 
+### What will you do today?
+* emg: Revisar ticket de contabilidad - [NOMINIA == SIGLESIAS]
+* EMG: Inciar pruebas en bpm de importaciones.
+* se tiene reunion mensual de IT - Promedical a horas 16:00.
+* 
+
+#### Are there any blockers?
+* EMG: Ninguno.
 
 
 # Marcelo Osinaga Zabala
