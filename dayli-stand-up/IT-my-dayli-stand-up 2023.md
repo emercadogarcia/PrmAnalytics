@@ -701,10 +701,44 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 * emg: Revisar ticket de contabilidad - [NOMINIA == SIGLESIAS]
 * EMG: Inciar pruebas en bpm de importaciones.
 * se tiene reunion mensual de IT - Promedical a horas 16:00.
-* 
 
 #### Are there any blockers?
 * EMG: Ninguno.
+
+## 06/10/2023
+### What did you do yesterday?
+* EMG: Se hace modificacion a programa EN_APUNM para que pase directo a coampo CODIGO_CONCEPTO a solicitud ee ticket de finanzas.
+* 
+
+### What will you do today?
+* emg: Revisar ticket de contabilidad - [NOMINIA == SIGLESIAS]
+* EMG: Inciar pruebas en bpm de importaciones.
+* se tiene reunion mensual de IT - Promedical a horas 16:00.
+
+#### Are there any blockers?
+* EMG: Ninguno.
+
+## 07/10/2023
+### What did you do yesterday?
+* EMG: Se ha Revisado ticket de contabilidad - [NOMINIA == SIGLESIAS]
+* EMG: Revisar ticket de Roy Muauricio sobre el registros de pagos.
+* EMG: Se manda correo sobre articulos en RESERVA.
+* EMG: Se revisar ticket sobre pedido que no podian facturar el cual se soluciono.
+* MOZ: Se pasó al entorno real los BPM Baja médica y Certificado de trabajo con sus informes cada uno.
+* MOZ: Se Modifica vista de informe BOL_SUI_VTAS_FZA Se le adicionó el campo canalv para mostrar en el informe.
+* MOZ: Revisar la vista de MEGAREPORTE adición de los campos ZONA_MUESTRAS_MEDICAS_150 y LABORATORIO analizando ese tema de la fecha aplicaré la solución de duplicar la vista La razon de que son varios lugares en los que se cambia la fecha aún no se aplico ningun cambio en real.
+
+### What will you do today?
+* EMG: Me Reunire con equipo de compras para revisar avances y tener claridad sobre las dudas y hacer llegar a los consultares de -Edisa.
+* EMG: Habilitar generacion bpm importaciones al crear expediente impoortacion.
+* EMG: Analizar ticket sobre nomina que fue levantado por SIGLESIAS.
+* MOZ: Revisar el reporte de ventas de BONAPHARM no se está enviando.
+* MOZ: Seguir revizando el mega reporte en el tema de fecha dando el tiempo aplicare la solución propuesta y cerrar ese requerimiento.
+
+
+#### Are there any blockers?
+* EMG: Ninguno.
+* MOZ: Ninguno.
 
 
 # Marcelo Osinaga Zabala
