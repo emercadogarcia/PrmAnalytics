@@ -740,6 +740,26 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 * EMG: Ninguno.
 * MOZ: Ninguno.
 
+## 16/10/2023
+### What did you do yesterday?
+* EMG: Semana de capacitacion de lideres funcionales sobre LIBRA.
+* EMG: Se envia recordatorio sobre solicitud de flujo a capital humano sobre la mejoras que solicito.
+* EMG: Se resuleve problema de articulos que viajan desde ip6 y que asigna ubiciano a zonas donde no existe.
+* MOZ: Envio de reporte de backorder a los comerciales.
+* MOZ: Participacion en Semana de capacitacion lideres funcionales LIBRA.
+
+### What will you do today?
+* EMG: Revisar caso de fechas retrasada en pedidos actuales. ejejmplo 16457
+* EMG: Habilitar programas en flujo de importaciones.
+* EMG: Enviar nuevamente recordatorio sobre fluos a capital humano.
+* MOZ: Actualizar el maestro de usuarios con el personal retirado.
+* MOZ: Avanzar con el tema de condidicones comrerciales con la nueva solicitud.
+* MOZ: Continaur con el megareporte se va duplicar y agregar el mes, para realizar  una alerta para el envio de los datos.
+
+#### Are there any blockers?
+* EMG: Ninguno.
+* MOZ: Tema de mejoras a bpm BENEFICIOS - No tenemo el flujo hasta fecha.
+
 
 # Marcelo Osinaga Zabala
 
