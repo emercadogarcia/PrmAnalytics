@@ -760,6 +760,41 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 * EMG: Ninguno.
 * MOZ: Tema de mejoras a bpm BENEFICIOS - No tenemo el flujo hasta fecha.
 
+## 27/10/2023
+### What did you do yesterday?
+* EMG: Completar reporte de ventas por quincena.
+* EMG: Se levanta ticket a soporte edisa por mensaje de advertencia que se muestra al quitar lineas en HC.
+* EMG: Se reviso procesos incompletos que estaban en el area de facturacion.
+* MOZ: Generar flujo de bpm para solicitud de permisos (cita medica) y solicitud de quinquenio.
+* MOZ: Se genero dos procedimientos almacenado, uno para validar los campos y otro para redireccionar el bpm.
+
+### What will you do today?
+* EMG: Revisar mejora que se puede aplicar a reporte de ventas quincenal.
+* EMG: Flujo de importaciones - Validar si se levanta ticket a soporte.
+* MOZ: validar los campos de los nuevos flujos en version web.
+* MOZ: Se programa la generacion de informes de los dos flujos.
+
+#### Are there any blockers?
+* EMG: Ninguno.
+* MOZ: Ninguno. 
+
+## 27/10/2023
+### What did you do yesterday?
+* EMG: Se Revisa mejora que se puede aplicar a reporte de ventas quincenal (adicionar nombre).
+* MOZ: Se valida los campos de los nuevos flujos en version web.
+* MOZ: Sabado con turno en soporte.
+
+### What will you do today?
+* EMG: Flujo de importaciones - Validar si se levanta ticket a soporte.
+* EMG: agregar llamada a programas por botones a flujo de importaciones.
+* EMG: Verificacion de datos aleatoria de procesos.
+* EMG y MOZ: Soporte cierre comercial remoto.
+* MOZ: Se programa la generacion de informes de los dos flujos.
+
+#### Are there any blockers?
+* EMG: Ninguno.
+* MOZ: Ninguno. 
+
 
 # Marcelo Osinaga Zabala
 
