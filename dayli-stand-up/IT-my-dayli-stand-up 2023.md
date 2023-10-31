@@ -790,6 +790,7 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 * EMG: Verificacion de datos aleatoria de procesos.
 * EMG y MOZ: Soporte cierre comercial remoto.
 * MOZ: Se programa la generacion de informes de los dos flujos.
+* MOZ: Revisar alerta envio de bpm para cada usuario.
 
 #### Are there any blockers?
 * EMG: Ninguno.
