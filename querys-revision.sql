@@ -55,7 +55,7 @@ WHERE CODIGO = 1504 AND EMPRESA = '004' AND VERSION = 1 AND PERIODO = 5 AND EJER
 /*=======CONSULTAR PPTO CARTERA=========*/
 
 UPDATE alrt_alertas SET procedimiento_ejecutar = 'PKALRTJOB.SET_PROPIEDAD(''INICIALIZAR_INFORMES_ADJUNTOS'', ''S'');
-PKALRTJOB.ADD_ADJUNTO_GI(''BOL_VTA_FLASH_B'', ''Ventas_Mes.xlsx'', ''17'', ''004'', ''MOSINAGA'', ''P2427'', ''EXCELXML'', 428875); commit;' WHERE numero_alerta = 4009;
+PKALRTJOB.ADD_ADJUNTO_GI(''BOL_VTA_FLASH_B'', ''Ventas_Mes.xlsx'', ''17'', ''004'', ''MOSINAGA'', ''P1133'', ''EXCELXML'', 120562); commit;' WHERE numero_alerta = 4009;
 COMMIT;
 PKALRT.GRABAR_COLA_ALERTAS(p_numero_alerta => 4009, p_asunto_alerta=>'RESUMEN DE VENTAS BONAPHARM MES ANTERIOR'|| to_char(sysdate,'MM-YYYY'), p_notificar_mail_to => 'marcelo.osinaga@promedical.com.bo', p_notificar_mail_cc => 'marcelo.osinaga@promedical.com.bo', p_texto_alerta_html_clob => '<h3><br>Buenos dias:<br/>');
 COMMIT;
@@ -72,3 +72,30 @@ PKALRT.GRABAR_COLA_ALERTAS(p_numero_alerta => 4009, p_asunto_alerta=>'[BONAPHARM
 commit;
 UPDATE alrt_alertas SET procedimiento_ejecutar = '' WHERE numero_alerta = 4009;
 COMMIT;
+
+
+
+
+UPDATE alrt_alertas SET procedimiento_ejecutar = 'PKALRTJOB.SET_PROPIEDAD(''INICIALIZAR_INFORMES_ADJUNTOS'', ''S'');
+PKALRTJOB.ADD_ADJUNTO_GI(''BOL_VTA_FLASH_B'', ''Falsh_ventas_bnp.xlsx'', ''17'', ''004'', ''MOSINAGA'', ''P1133'', ''EXCELXML'', 120562); commit;' WHERE numero_alerta = 4009;
+COMMIT;
+PKALRT.GRABAR_COLA_ALERTAS(p_numero_alerta => 4009, p_asunto_alerta=>'[BONAPHARM]- reporte de ventas '|| to_char(sysdate,'MM-YYYY'), p_notificar_mail_to => 'marcelo.osinaga@promedical.com.bo', p_notificar_mail_cc => 'marcelo.osinaga@promedical.com.bo', p_texto_alerta_html_clob => '<h3><br>Buenos dias:<br/>
+<br>Adjunto las ventas registradas del mes anterior.
+ <br/></h3>
+{GI:BOL_VTA_FLASH_B:17:004:MOSINAGA:P2427:HTML:228354}');
+COMMIT;
+UPDATE alrt_alertas SET procedimiento_ejecutar = '' WHERE numero_alerta = 4009;
+COMMIT;
+
+
+
+
+UPDATE alrt_alertas SET procedimiento_ejecutar = 'PKALRTJOB.SET_PROPIEDAD(''INICIALIZAR_INFORMES_ADJUNTOS'', ''S'');
+PKALRTJOB.ADD_ADJUNTO_GI(''BOL_VTA_FLASH_B'', ''Inventarios_NAL.xlsx'', ''17'', ''004'', ''MOSINAGA'', ''P2476'', ''EXCELXML'', 428875); commit;' WHERE numero_alerta = 4009;
+COMMIT;
+PKALRT.GRABAR_COLA_ALERTAS(p_numero_alerta => 4009, p_asunto_alerta=>'[PROMEDICAL]- INVENTARIOS ACTUALIZADOS', p_notificar_mail_to => 'marcelo.osinaga@promedical.com.bo', p_texto_alerta_html_clob => '<h3><br>Buenos dias:<br/>
+<br>Adjunto el informe de STOCK DISPONIBLE para la venta con Vencimiento y los articulos Proximos a VENCER.
+ <br/></h3>',p_enviar_email => 'I');
+UPDATE alrt_alertas SET procedimiento_ejecutar = NULL WHERE numero_alerta=4009;
+commit;
+
