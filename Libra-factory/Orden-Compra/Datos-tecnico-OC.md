@@ -1,4 +1,6 @@
 # MOUDLO DE COMPRAS - Y SU MANEJO
+pruebas que se van realizando y habilitando en el sistema para hacer los registros de datos.
+
 ## Conceptos que se tienen dudas.
 ### Barco.  
     Linea naviera. nunca se contrata un barco es la naviera.  "MSC"
