@@ -796,6 +796,40 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 * EMG: Ninguno.
 * MOZ: Ninguno. 
 
+## 03/11/2023
+### What did you do yesterday?
+* EMG: Se agregado llamada a programas por botones a flujo de importaciones.
+* EMG: Se Verifica de datos aleatoria de procesos, se evidencia que no toman en cuenta correos que se envia desde el sistema (ejmeplo RESERVAS)
+* MOZ: Se ha generado los informes de los dos flujos de permisos y quinquenios.
+* MOZ: Se ha revisado alerta envio de bpm para cada usuario.
+
+### What will you do today?
+* EMG: Revision de programas en ambiente de pruebas.
+* EMG: Revision de mas ACCIONES en ambiente de pruebas.
+* MOZ: Probar cirucuito de ventaas.
+* MOZ: Revisar y rehacer cambios aplicados en ambiente de prueba,
+* EMG y MOZ: Dando soporte en remoto.
+#### Are there any blockers?
+* EMG: Ninguno.
+* MOZ: Ninguno. 
+
+## 06/11/2023
+### What did you do yesterday?
+* EMG: Revision de programas en ambiente de pruebas y se habilita mas ACCIONES y MACRO en maestro proceso..
+* MOZ: Se hizo pruebas de cirucuito de ventaas, pero se encontro una problema al generar hoja de carga, pero con un articulo.
+
+
+### What will you do today?
+* EMG: REviision de ticket #9369 "informe de TEST"
+* EMG: Enviar recordatorio de gestiond e tiempo con finanzas.* Planificar 9la reunion con finanzas de aacuerdo a disponiblidad.
+* EMG: Revisar proceso 04003.
+* MOZ: Revisar y rehacer cambios aplicados en ambiente de prueba,
+* MOZ: Revisar circuito de comenrcial (04006) para via las opciones que se tienen para hacier la mejora.
+
+#### Are there any blockers?
+* EMG: Ninguno.
+* MOZ: Ninguno. 
+
 
 # Marcelo Osinaga Zabala
 
