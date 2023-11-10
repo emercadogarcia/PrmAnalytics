@@ -832,18 +832,14 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 
 ## 10/11/2023
 ### What did you do yesterday?
-* EMG: Se realiza la capacitacion a los jefes de venta de cada regional y cadenas.
+* EMG: Se realiza la capacitacion a los jefes de venta de cada regional y las encagadas de cadenas.
 * EMG: Se envia correo de consulta a Jorge R. para que sea pasado a Edisa para el lanzamiento del bpm "importacion".
-* EMG: 
-* 
-
+* EMG: Se acompaña en proceso de contabilizacion de movimientos a medio dia[09/11/2023].
+* MOZ: Se habilita en pruebas el bpm Quinquenio y cita medicas, se espera confirmacion de validacion por parte de Capital humano.
 
 ### What will you do today?
-* EMG: REviision de ticket #9369 "informe de TEST"
-* EMG: Enviar recordatorio de gestiond e tiempo con finanzas.* Planificar 9la reunion con finanzas de aacuerdo a disponiblidad.
-* EMG: Revisar proceso 04003.
-* MOZ: Revisar y rehacer cambios aplicados en ambiente de prueba,
-* MOZ: Revisar circuito de comenrcial (04006) para via las opciones que se tienen para hacier la mejora.
+* EMG: Esperar respuesta sobre exped. importacion (config.) caso contrario habilitar mediante personalizacion asignacion de bpm a expediente.
+* MOZ:  Validar antiguedad en solicitud de quinquenio.
 
 #### Are there any blockers?
 * EMG: Ninguno.
