@@ -845,6 +845,21 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 * EMG: Ninguno.
 * MOZ: Ninguno. 
 
+## 13/11/2023
+### What did you do yesterday?
+* EMG: A solicitud ee la gerencia de TI se revisa un tema de cartera, se la prioridad sobre las tareas, el cual se debia a un tema de analisis de los datos, ya que incidencia con el sistema no habia.
+* EMG: Se valido sobre respuesta enviada sobre expedientes a JREINOSO pero no se tiene ninguna reouesta.
+* EMG: De guardia durante el sabado 11 en reemplazo de MOZ.
+* MOZ: Validar antiguedad en solicitud de quinquenio.
+
+### What will you do today?
+* EMG: 
+* MOZ: 
+
+#### Are there any blockers?
+* EMG: Ninguno.
+* MOZ: Ninguno. 
+
 
 
 # Marcelo Osinaga Zabala
