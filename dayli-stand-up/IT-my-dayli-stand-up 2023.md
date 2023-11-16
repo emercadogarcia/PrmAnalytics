@@ -850,15 +850,36 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 * EMG: A solicitud ee la gerencia de TI se revisa un tema de cartera, se la prioridad sobre las tareas, el cual se debia a un tema de analisis de los datos, ya que incidencia con el sistema no habia.
 * EMG: Se valido sobre respuesta enviada sobre expedientes a JREINOSO pero no se tiene ninguna reouesta.
 * EMG: De guardia durante el sabado 11 en reemplazo de MOZ.
-* MOZ: Validar antiguedad en solicitud de quinquenio.
+* MOZ: Se Valido antiguedad en solicitud de quinquenio, listo. NOTA: Al realizar pruebas se ha encontrado datos duplicados pero en el campo DNI distintos.
 
 ### What will you do today?
-* EMG: 
-* MOZ: 
+* EMG: Reprogramar la reunion de viernes (daily standup) al dia jueves.
+* EMG: trabajar en revison bpm 03003A y 04003 para ver mejoras en su utilizacion.
+* MOZ: Revisar bpm comercial.
+* MOZ: Se requiere reunion para iniciar con la toma de datos.
 
 #### Are there any blockers?
 * EMG: Ninguno.
-* MOZ: Ninguno. 
+* MOZ: Reunion con finanzas-tema baja de cartera.
+
+## 16/11/2023
+### What did you do yesterday?
+* EMG: Se ha reprogramado la reunion de viernes (daily standup) al dia jueves de aqui en adelante para tener maas dias para comentar.
+* EMG: Se ha tenido que buscar informacion por parte propia ya que no se recibio respuesta a consulata sobre los expedientes. Se logrado lanzar los expedientes de bpm al crear un expediente de importacion el cual esta asociado al bpm y tambien se esta agregando accesos directos para agilizar y actualizar datos tomando como ejemplo los que mostro Dany Rojas (edisa) haciendo que tengan una mejor presentacion y visibilidad. Todo lo mencionado se lo ha realizado mediante codigo, personalizacion y apoyado con el manual.
+* MOZ: Se ha revisar bpm comercial flujo para levantar informacion.
+* MOZ: Se ha realizado la reunion y se ha avanzado con el manual de facturacion.
+* MOZ: Se ha revisado reporte de cartera para hacer un levantamiento de datos.
+* MOZ: Envio de reporte a los comercial de backorder.
+
+### What will you do today?
+* EMG: Realizar ajustes y personalizacion complementaria al bpm importacion.
+* EMG: Revisar tema del A10 de impresion de docuemtno contable, pedir los requerimientos que estan solicitando.
+* MOZ: Revisar informe de NDC para determinar la fuente y los datos que se van a mostrar.
+* MOZ: Continaur revision descuentos comerciales - clonar flujo.
+
+#### Are there any blockers?
+* EMG: Ninguno.
+* MOZ: Reunion con finanzas-tema baja de cartera.
 
 
 
