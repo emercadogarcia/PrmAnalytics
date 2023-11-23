@@ -881,6 +881,22 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 * EMG: Ninguno.
 * MOZ: Reunion con finanzas-tema baja de cartera.
 
+## 20/11/2023
+### What did you do yesterday?
+* EMG: Se completo ajustes y personalizacion complementaria al bpm importacion, se genera pruebas y enivo de notificaciones.
+* MOZ: Se reviso el informe de NDC para determinar la fuente y los datos que se van a mostrar.
+* MOZ: Se continuo con la revision descuentos comerciales y se hizo la clonacion del flujo.
+
+### What will you do today?
+* EMG: Revisar tema del A10 de impresion de docuemtno contable, pedir los requerimientos que estan solicitando.
+* EMG: Pruebas de funcionamiento del bpm importacion completa y programar reunion con equipo de compras.
+* MOZ: Realizar la insercion automatica de descuentos comerciales.
+* MOZ: El dia martes se tiene programado reunion para ver tema de baja de cartera de cleinte.
+
+#### Are there any blockers?
+* EMG: Ninguno.
+* MOZ: Ninguno.
+
 
 
 # Marcelo Osinaga Zabala
