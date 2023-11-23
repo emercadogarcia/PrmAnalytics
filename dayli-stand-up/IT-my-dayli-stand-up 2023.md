@@ -897,6 +897,26 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 * EMG: Ninguno.
 * MOZ: Ninguno.
 
+## 23/11/2023
+### What did you do yesterday?
+* EMG: Se revisa tema del A10 de impresion de docuemtno contable, se envia consulta para ver si existen algunas observaciones o solicitudes especiales.
+* EMG: Se realizo pruebas y ajuste de funcionamiento del bpm importacion completa y se acuerda reunion con equipo de compras para el dia 28 del mes.
+* EMG: Se ha enviado correo solicitando mediante correo un mapeo de sus procesos que realizan con respecto al erp de las areas de operaciones, comercial, finanzas y capital humano.
+* MOZ: Se ha Realizado la insercion automatica de descuentos comerciales como pureba inicial y se ha probado con un pedido y toma los valores.
+* MOZ: Se ha tenido reunion el dia martes que se tenia programado,n para ver tema de baja de cartera de cleinte. Esta pendiente reunion con Sergio/Alicia para tema de rendiciones.
+* MOZ: Se envio reporte a los comerciales de backorder.
+
+### What will you do today?
+* EMG: Complementar A10 con los datos que se tienen disponibles.
+* EMG: Se programará una revision de flujo 04003 revisando las automatizaciones.
+* EMG: Responder al correo sobre status del kpi de noviembre.
+* MOZ: Completar manual de cartera, pago a proveedores y fondo a rendir y caja chica.
+* MOZ: Revision y ajuste de bpm comercial 04006A.
+
+#### Are there any blockers?
+* EMG: Ninguno.
+* MOZ: Ninguno.
+
 
 
 # Marcelo Osinaga Zabala
