@@ -917,6 +917,44 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 * EMG: Ninguno.
 * MOZ: Ninguno.
 
+## 27/11/2023
+### What did you do yesterday?
+* EMG: Se ha Complementado A10 con los datos que se tienen disponibles y consultas adicionales que se realizo al area solicitante.
+* EMG: Se envia los datos solicitados sobre los procesos por areas a DLOBO.
+* MOZ: Se ha completado manual de cartera, pago a proveedores al 50% y fondo a rendir y caja chica al 50%.
+* MOZ: Se hizo revision y se continuo con el ajuste de bpm comercial 04006A (al 50%).
+
+### What will you do today?
+* EMG: Se revisara flujo 04003 para atender requerimiento.
+* EMG: Enviar recordatorio sobre consultas a contabilidad para amplien los datos que se requiere saber.
+* MOZ: Crear alerta para finanzas, sobre Historico detallado de costos, reporte de ventas, mayor detallado de caja cobranzas, bancos y proveedores, cobranza fuentes.
+* MOZ: Completar manual de pago a proveedores, fondo a rendir y caja chica y continauar el bpm de comercial 04006A.
+
+#### Are there any blockers?
+* EMG: Ninguno.
+* MOZ: Ninguno.
+
+## 30/11/2023
+### What did you do yesterday?
+* EMG: Se revisa flujo 04003 validando posibilidades de mejoras para evitar utilizar alertas, existen temas de politicas que tambien se tiene que analizar para ver la mejora para que abarque ese tema sin usar codigo.
+* EMG: Se Envio correo de recordatorio sobre consultas a contabilidad sobre impresion de comprobante contable. 
+* EMG: Se entrego el formato A10 - para impresion de comprobante contable, esta en su segunda version la cual esta de acuerdo a lo solicitado por el arean.
+* EMG: Se realizo reunion informativa para mostrar el nuevo flujo de bpm para seguimiento de importacion (03003A), en el cual surgieron nuevas solicitudes y sugerencias. Se aplicaron las solicitudes que correspondian al flujo como ser los campos nuevos en la seleccion de articulos el resto se programa para revisar y analizar la solicitud mas detallada ya que son nuevas y tambien corresponden a programas fuera del flujo.
+* EMG: Se pone en produccion del bpm 03003A, inicialmente indicaron que lo utilizaran con una UEN para que vayan registrando datos y cargando informaicon para ver si existen algunas sugerencias adicionale.
+* MOZ: Se Crea alerta para finanzas, sobre Historico detallado de costos, reporte de ventas, mayor detallado de caja cobranzas, bancos y proveedores, cobranza fuentes.
+* MOZ: Se completa manual de pago a proveedores; pendiente fondo a rendir y caja chica y continauar el bpm de comercial 04006A.
+* MOZ: flujo de descuentos, ya se realizo prueba con un articulo y se valido que se guarden los datos y se habiliten en los pedidos del cliente.
+* MOZ: Se envia reporte de backorder nuevamente.
+
+### What will you do today?
+* EMG: Ver correo sobre ingreso de mercaderia enviado por DLOBO.
+* EMG: Continuar revision flujo 04003.
+* MOZ: Completar la guia para fonrdos a rendir y caja chica.
+
+#### Are there any blockers?
+* EMG: Ninguno.
+* MOZ: Ninguno.
+
 
 
 # Marcelo Osinaga Zabala
