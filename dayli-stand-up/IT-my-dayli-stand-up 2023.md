@@ -955,6 +955,22 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 * EMG: Ninguno.
 * MOZ: Ninguno.
 
+## 04/12/2023
+### What did you do yesterday?
+* EMG: Se mostro como revisar tema del correo sobre ingreso de mercaderia enviado, que en la cual se debe aplicar las revisiones basicas/logicas ayudandose de las "Cinco W" que apoyan para tal efecto..
+* EMG: Se revisa y aplica cambios al flujo 04003. Se tiene inconvenientes cuando se ejecuta desde la web los bpm desde web logic funcionan normal.
+* MOZ: Se completa la guia para fonrdos a rendir y caja chica.
+
+### What will you do today?
+* EMG: Se analizara ejecucion de bpm 04003, ya que las pruebas no se ejecuta de forma regular al igual que en weblogic desde pc.
+* EMG: Enviar KPI del cierre de noviembre y el correspondiente de diciembre.
+* MOZ: Generar alerta para envieor reporte de cartera de quincena 1 y 2. Probbar la ejecucion de lo solicitado en el ticket 9650.
+
+
+#### Are there any blockers?
+* EMG: Ninguno.
+* MOZ: Ninguno.
+
 
 
 # Marcelo Osinaga Zabala
