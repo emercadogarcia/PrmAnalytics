@@ -967,10 +967,36 @@ B020	RIESGO EXTRAORDINARIO	RRHH	RRHH - CAPITAL HUMANO
 * MOZ: Generar alerta para envieor reporte de cartera de quincena 1 y 2. Probbar la ejecucion de lo solicitado en el ticket 9650.
 
 
-#### Are there any blockers?
+### Are there any blockers?
 * EMG: Ninguno.
 * MOZ: Ninguno.
 
+## 19/12/2023
+Daily standup - Reunión diaria de pie
+### What did you do yesterday?
+EMG:
+Se continuo realizando pruebas para optimizar el bpm 04003, no se tiene resultados favorables en tema de la versión web, sigue realizando cambios para probar .  
+Se revisa ticket sobre ingreso de mercadería en LIBRA, gran lote %2364 el cual estaba configurado para el almacén LPZ. La consulta fue quien modifico el registro?, lo cual considero que deberían tomarse las previsiones necesarias para hacer los ingresos, ya que fueron como ultima alternativa. Previsiones = revisión BASICA = Articulo - lote cantidad - fecha venc y almacén de ingreso, tomando en cuenta que tenemos certificación BPA.
+Se adiciono personalización a programa C_EXPIMP para guardar las modificaciones que se lleguen a aplicar, ya que la tabla no esta auditada en libra. También se hace corrección al código para que no afecte a otras regiones.
+
+MOZ: 
+Se realizo avances con el BPM 04006A, modificación plantilla.
+
+### What will you do today?
+EMG:
+Realizar las ultimas pruebas sobre el ambiente web para definir y tomar la decisión y enviar las conclusiones. 
+Planificar revisión de gestor documental.
+MOZ:
+Coordinar para reunirse con el equipo contable para realizar las guías.
+Continuar con el bpm 04006A.
+Enviar reporte de backorder.
+Enviar los manuales generados de contabilidad.
+
+### Are there any blockers? - ¿Existe Bloqueo o necesitas soporte técnico?
+No
+
+### Comentarios adicionales
+Revisión sobre NDC de cartera.
 
 
 # Marcelo Osinaga Zabala
