@@ -1,5 +1,5 @@
-CREATE OR REPLACE FORCE VIEW BOL_BI_VTAS_PPTO(FECHA_FACTURA, EJERCICIO, V_MES, REG, SUBREG, CANALV, CADENA, RPN2, RPN3, RPN4, CADENA_AUX, AGENTE, COD_RPN, NOMBRE_AGENTE, CLIENTE_ID, CLIENTE_NOMBRE, CAT_COD, CAT, UEN, CODIGO_ESTAD5, LAB, CODIGO_ARTICULO, 
-ARTICULO_NOMBRE, JP_COD, JP_NOMBRE, ST_COD, ST_NOMBRE, TIPO_PEDIDO, USUARIO_PEDIDO, TIPO, TIPO_VTA, FUENTE, CANTIDAD, IMP_NETO, IMP_FACTURADO, PPTO_UND, PPTO_VLR, GESTOR_VTAS, COD_ALMAC) AS
+CREATE OR REPLACE FORCE VIEW BOL_BI_VTAS_PPTO(FECHA_FACTURA, EJERCICIO, V_MES, REG, SUBREG, CANALV, CADENA, RPN2, RPN3, RPN4, RPN5, RPN6, CADENA_AUX, AGENTE, COD_RPN, NOMBRE_AGENTE, CLIENTE_ID, CLIENTE_NOMBRE, CAT_COD, CAT, UEN, CODIGO_ESTAD5, LAB, 
+CODIGO_ARTICULO, ARTICULO_NOMBRE, JP_COD, JP_NOMBRE, ST_COD, ST_NOMBRE, TIPO_PEDIDO, USUARIO_PEDIDO, TIPO, TIPO_VTA, FUENTE, CANTIDAD, IMP_NETO, IMP_FACTURADO, PPTO_UND, PPTO_VLR, GESTOR_VTAS, COD_ALMAC) AS
 SELECT /*BOL_BI_VTAS_PPTO by Edgar Mercado*/
          FACTURAS_VENTAS.fecha_factura
        , facturas_ventas.ejercicio
@@ -11,6 +11,8 @@ SELECT /*BOL_BI_VTAS_PPTO by Edgar Mercado*/
        , facturas_ventas.RPN2
        , facturas_ventas.RPN3
        , facturas_ventas.RPN4
+       , facturas_ventas.RPN5
+       , facturas_ventas.RPN6
        , DECODE(facturas_ventas.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES','ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE',FACTURAS_VENTAS.CADENA) CADENA_AUX
        , agentes_clientes.agente
        , agentes.nif                   COD_RPN
@@ -153,7 +155,7 @@ FROM
                                      )
                        )
                        RPN4
-                     , (
+                      , (
                               SELECT
                                      NOMBRE
                               FROM
@@ -404,7 +406,7 @@ SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.pe
               when v_xls_planes_ventas.codigo in ('824'
                                                 ,'864'
                                                 ,'1004'
-                                                ,'1164', '1327','1424')
+                                                ,'1164', '1327','1424','1604')
                      then 'ÉTICO'
               when v_xls_planes_ventas.codigo in ('964')
                      then 'ENTIDADES'
@@ -414,7 +416,7 @@ SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.pe
               when v_xls_planes_ventas.codigo in ('824'
                                                 ,'864'
                                                 ,'1004'
-                                                ,'1164','1327','1424')
+                                                ,'1164','1327','1424','1604')
                      then 'ÉTICO'
               when v_xls_planes_ventas.codigo in ('964')
                      then 'ENTIDADES'
@@ -423,7 +425,7 @@ SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.pe
      ,'PPTO'                        FUENTE, 0 CANTIDAD, 0 IMP_NETO, 0 IMP_FACTURADO
      , v_xls_planes_ventas.cantidad PPTO_UND
      , v_xls_planes_ventas.importe  PPTO_VLR
-     , CASE /*se cambia la config*/
+     , CASE
               when articulos.codigo_estad3 in ('GRUNENTHAL')
                 THEN trim(subStr(clientes.RPN2,0,3))
               when articulos.codigo_estad5 in ('040101')
@@ -435,7 +437,7 @@ SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.pe
               when articulos.codigo_estad3 in ('LAFAGE')
                 THEN trim(subStr(clientes.RPN6,0,3))
                 else agentes.nif
-         end GESTOR_VTAS  /* Modifciado*/
+         end GESTOR_VTAS
 	   , V_XLS_PLANES_VENTAS.ALMACEN COD_ALMAC
 FROM
        V_XLS_PLANES_VENTAS
@@ -533,7 +535,7 @@ FROM
                                    )
                      )
                      RPN4
-                   , (
+                          , (
                             SELECT
                                    NOMBRE
                             FROM
@@ -592,5 +594,5 @@ WHERE
               and V_XLS_PLANES_VENTAS.ARTICULO=ARTICULOS.CODIGO_ARTICULO
        )
        AND v_xls_planes_ventas.codigo IN ('824','864', '964','1004','1164',
-        '1327','1424')
+        '1327','1424','1604')
        AND v_xls_planes_ventas.empresa LIKE '004';
