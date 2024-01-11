@@ -178,7 +178,7 @@ WHERE
 				 AND bol_bi_vtas_ppto.codigo_articulo = stocks_detallado.codigo_articulo
 				 AND bol_bi_vtas_ppto.tipo_pedido BETWEEN '10' AND '50'
 				 AND bol_bi_vtas_ppto.ejercicio = TO_CHAR(sysdate, 'YYYY')
-				 AND bol_bi_vtas_ppto.v_mes = TO_CHAR(sysdate, 'MM')
+				 AND bol_bi_vtas_ppto.v_mes = TO_CHAR(sysdate, 'MM') 
 	   ) CANTIDAD_CUMPLIMIENTO
 	   ,(
 	   SELECT  SUM(sd.CANTIDAD_UNIDAD1)
