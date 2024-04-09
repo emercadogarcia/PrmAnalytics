@@ -1,5 +1,6 @@
 CREATE OR REPLACE FORCE VIEW BOL_BI_VTAS_PPTO(FECHA_FACTURA, EJERCICIO, V_MES, REG, SUBREG, CANALV, CADENA, RPN2, RPN3, RPN4, RPN5, RPN6, CADENA_AUX, AGENTE, COD_RPN, NOMBRE_AGENTE, CLIENTE_ID, CLIENTE_NOMBRE, CAT_COD, CAT, UEN, CODIGO_ESTAD5, LAB, 
-CODIGO_ARTICULO, ARTICULO_NOMBRE, JP_COD, JP_NOMBRE, ST_COD, ST_NOMBRE, TIPO_PEDIDO, USUARIO_PEDIDO, TIPO, TIPO_VTA, FUENTE, CANTIDAD, IMP_NETO, IMP_FACTURADO, PPTO_UND, PPTO_VLR, GESTOR_VTAS, COD_ALMAC) AS
+CODIGO_ARTICULO, ARTICULO_NOMBRE, JP_COD, JP_NOMBRE, ST_COD, ST_NOMBRE, TIPO_PEDIDO, USUARIO_PEDIDO, TIPO, TIPO_VTA, FUENTE, CANTIDAD, IMP_NETO, IMP_FACTURADO, PPTO_UND, PPTO_VLR, GESTOR_VTAS, COD_ALMAC, 
+UEN_AUX1) AS
 SELECT /*BOL_BI_VTAS_PPTO by Edgar Mercado*/
          FACTURAS_VENTAS.fecha_factura
        , facturas_ventas.ejercicio
@@ -13,7 +14,7 @@ SELECT /*BOL_BI_VTAS_PPTO by Edgar Mercado*/
        , facturas_ventas.RPN4
        , facturas_ventas.RPN5
        , facturas_ventas.RPN6
-       , DECODE(facturas_ventas.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES','ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE',FACTURAS_VENTAS.CADENA) CADENA_AUX
+       , DECODE(facturas_ventas.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES'/* 09/04/2024**,'ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE'*/,FACTURAS_VENTAS.CADENA) CADENA_AUX
        , agentes_clientes.agente
        , agentes.nif                   COD_RPN
        , agentes.nombre                NOMBRE_AGENTE
@@ -59,6 +60,7 @@ SELECT /*BOL_BI_VTAS_PPTO by Edgar Mercado*/
              else agentes.nif
           end GESTOR_VTAS /* Fin nueva confgi*/
 		 , V_FACTURAS_VENTAS_LIN.ALMACEN COD_ALMAC
+         , DECODE(articulos.codigo_estad3,'LAFAGE', articulos.D_CODIGO_ESTAD5||' - '||articulos.codigo_estad3, 'BONAPHARM', articulos.D_CODIGO_ESTAD5||' - '||articulos.codigo_estad3, articulos.D_CODIGO_ESTAD5) UEN_AUX1
 FROM
          (
                 SELECT
@@ -318,7 +320,7 @@ GROUP BY
        , facturas_ventas.RPN4
        , facturas_ventas.RPN5
        , facturas_ventas.RPN6
-       , DECODE(facturas_ventas.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES','ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE',FACTURAS_VENTAS.CADENA)
+       , DECODE(facturas_ventas.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES'/* 09/04/2024** ,'ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE'*/,FACTURAS_VENTAS.CADENA)
        , agentes_clientes.agente
        , agentes.nif
        , agentes.nombre
@@ -351,7 +353,7 @@ SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.pe
      , clientes.RPN4
      , clientes.RPN5
      , clientes.RPN6
-     , DECODE(CLIENTES.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES','ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE',CLIENTES.CADENA) CADENA_AUX
+     , DECODE(CLIENTES.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES'/* 09/04/2024**,'ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE'*/,CLIENTES.CADENA) CADENA_AUX
      , agentes_clientes.agente
      , agentes.nif                 COD_RPN
      , agentes.nombre              NOMBRE_AGENTE
@@ -362,14 +364,7 @@ SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.pe
          FROM TIPOS_CLIENTE
          WHERE tipos_cliente.codigo=CLIENTES.TIPO_CLIENTE
        ) CAT,
-       (
-       SELECT descripcion
-       FROM familias
-       WHERE codigo_familia     = articulos.codigo_estad5
-              AND numero_tabla   = 5
-              AND ultimo_nivel   = 'S'
-              AND codigo_empresa = articulos.codigo_empresa
-       ) UEN,
+        UEN,
        articulos.codigo_estad5
      , articulos.codigo_estad3      LAB
      , v_xls_planes_ventas.articulo CODIGO_ARTICULO
@@ -439,6 +434,7 @@ SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.pe
                 else agentes.nif
          end GESTOR_VTAS
 	   , V_XLS_PLANES_VENTAS.ALMACEN COD_ALMAC
+       , DECODE(articulos.codigo_estad3,'LAFAGE', articulos.UEN||' - '||articulos.codigo_estad3, 'BONAPHARM', articulos.UEN||' - '||articulos.codigo_estad3, articulos.UEN) UEN_AUX1
 FROM
        V_XLS_PLANES_VENTAS
      , (
@@ -581,7 +577,14 @@ FROM
        CLIENTES
      , AGENTES_CLIENTES
      , AGENTES
-     , ARTICULOS
+     , (SELECT ARTICULOS.*, (
+       SELECT descripcion
+       FROM familias
+       WHERE codigo_familia     = articulos.codigo_estad5
+              AND numero_tabla   = 5
+              AND ultimo_nivel   = 'S'
+              AND codigo_empresa = articulos.codigo_empresa
+       ) UEN FROM ARTICULOS ) ARTICULOS
 WHERE
        (
               V_XLS_PLANES_VENTAS.CLIENTE     =CLIENTES.CODIGO_RAPIDO
