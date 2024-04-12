@@ -14,7 +14,7 @@ SELECT /*BOL_BI_VTAS_PPTO by Edgar Mercado*/
        , facturas_ventas.RPN4
        , facturas_ventas.RPN5
        , facturas_ventas.RPN6
-       , DECODE(facturas_ventas.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES'/* 09/04/2024**,'ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE'*/,FACTURAS_VENTAS.CADENA) CADENA_AUX
+       , TNEGOCIO /* DECODE(facturas_ventas.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES','ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE',FACTURAS_VENTAS.CADENA) */ CADENA_AUX
        , agentes_clientes.agente
        , agentes.nif                   COD_RPN
        , agentes.nombre                NOMBRE_AGENTE
@@ -106,7 +106,26 @@ FROM
                                      )
                        )
                        CADENA
-                     , (
+                    , (
+                              SELECT
+                                     NOMBRE
+                              FROM
+                                     VALORES_CLAVES V
+                              WHERE
+                                     V.CLAVE          ='TNEG'
+                                     AND V.VALOR_CLAVE=
+                                     (
+                                            SELECT
+                                                   VALOR_CLAVE
+                                            FROM
+                                                   CLIENTES_CLAVES_ESTADISTICAS c
+                                            WHERE
+                                                   c.CLAVE             ='TNEG'
+                                                   AND c.CODIGO_CLIENTE=FACTURAS_VENTAS.CLIENTE
+                                                   AND c.CODIGO_EMPRESA=facturas_ventas.empresa
+                                     )
+                       ) TNEGOCIO
+           			, (
                               SELECT
                                      NOMBRE
                               FROM
@@ -320,7 +339,7 @@ GROUP BY
        , facturas_ventas.RPN4
        , facturas_ventas.RPN5
        , facturas_ventas.RPN6
-       , DECODE(facturas_ventas.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES'/* 09/04/2024** ,'ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE'*/,FACTURAS_VENTAS.CADENA)
+       , TNEGOCIO /*DECODE(facturas_ventas.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES' ,'ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE',FACTURAS_VENTAS.CADENA)*/
        , agentes_clientes.agente
        , agentes.nif
        , agentes.nombre
@@ -353,7 +372,7 @@ SELECT null FECHA_FACTURA, v_xls_planes_ventas.ejercicio, v_xls_planes_ventas.pe
      , clientes.RPN4
      , clientes.RPN5
      , clientes.RPN6
-     , DECODE(CLIENTES.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES'/* 09/04/2024**,'ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE'*/,CLIENTES.CADENA) CADENA_AUX
+     , TNEGOCIO /*DECODE(CLIENTES.CANALV,'DISTRIBUIDORES','DISTRIBUIDORES','ACCESO','ACCESO','INDEPENDIENTE','INDEPENDIENTE',CLIENTES.CADENA) */ CADENA_AUX
      , agentes_clientes.agente
      , agentes.nif                 COD_RPN
      , agentes.nombre              NOMBRE_AGENTE
@@ -481,6 +500,25 @@ FROM
                      )
                      CADENA
                    , (
+                            SELECT
+                                   NOMBRE
+                            FROM
+                                   VALORES_CLAVES V
+                            WHERE
+                                   V.CLAVE          ='TNEG'
+                                   AND V.VALOR_CLAVE=
+                                   (
+                                          SELECT
+                                                 VALOR_CLAVE
+                                          FROM
+                                                 CLIENTES_CLAVES_ESTADISTICAS c
+                                          WHERE
+                                                 c.CLAVE             ='TNEG'
+                                                 AND c.CODIGO_CLIENTE=clientes.codigo_rapido
+                                                 AND c.CODIGO_EMPRESA=clientes.codigo_empresa
+                                   )
+                     ) TNEGOCIO
+       				, (
                             SELECT
                                    NOMBRE
                             FROM
